@@ -54,17 +54,17 @@ Music Composer and Sound Designer:
 
 **Game Stills:**
 
-![Game enemy danger](/other/screenshoot_4.png)
+![Game title screen](/press/TitleScreen.png)
 
-![Game enemy danger](/other/screenshoot_4.png)
+![Game monster tractor](/other/Monster_Tractor.png)
 
-![Game enemy danger](/other/screenshoot_4.png)
+![Game Mouth Beast](/other/MouthBeast.png)
 
-![Game enemy danger](/other/screenshoot_4.png)
+![Game Monster Bush](/other/Monster_Bush.png)
 
-![Game enemy danger](/other/screenshoot_4.png)
+![Game cave](/other/Cave.png)
 
-![Game enemy danger](/other/screenshoot_4.png) 
+![Game Elevator](/other/Elevator.png) 
 
 Thanks to reviewers, testers players, friends and guests who helped in any way the project become reality.
 
