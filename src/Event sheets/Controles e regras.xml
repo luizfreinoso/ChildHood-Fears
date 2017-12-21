@@ -1,0 +1,784 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Controles e regras</name>
+    <events>
+        <variable constant="0" name="Chave" sid="3951352112324553" static="0" type="text">no</variable>
+        <variable constant="0" name="STATUS" sid="683789674967015" static="0" type="text">STOPPED</variable>
+        <variable constant="0" name="Jogador" sid="3482207298475463" static="0" type="number">1</variable>
+        <event-group description="" sid="7060520283647135" title="Global">
+            <sub-events>
+                <event-block sid="84548766851387">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="6774093998388777" type="System" />
+                    </conditions>
+                    <actions>
+                        <action disabled="1" id="0" name="Set text" sid="3042322706473161" type="Text">
+                            <param id="0" name="Text">STATUS</param>
+                        </action>
+                        <action id="-4" name="Set position to another object" sid="424997642916115" type="Lanterna">
+                            <param id="0" name="Object">Player2</param>
+                            <param id="1" name="Image point (optional)">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2672074617898178">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="9615703168118569" type="Keyboard">
+                            <param id="0" name="Key">82 (R)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-26" name="Restart layout" sid="5045701998221195" type="System" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="2510077302366098">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="7682067570916429" type="System">
+                    <param id="0" name="Variable">STATUS</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;START&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-group description="" sid="2423627631212446" title="Controles">
+                    <sub-events>
+                        <event-block sid="5680194257347987">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="2284357668387342" type="Keyboard">
+                                    <param id="0" name="Key">39 (Right arrow)</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="8407546877628218">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="5112602475059292" type="System">
+                                            <param id="0" name="Variable">Jogador</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="5425013843056175" type="Player">
+                                            <param id="0" name="Instance variable">direcao</param>
+                                            <param id="1" name="Value">&quot;direita&quot;</param>
+                                        </action>
+                                        <action id="4" name="Set animation" sid="2220654145514993" type="Player">
+                                            <param id="0" name="Animation">&quot;Walk&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="3490306573465511">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="641907511806026" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="3852996604732415" type="Player2">
+                                            <param id="0" name="Instance variable">direcao</param>
+                                            <param id="1" name="Value">&quot;direita&quot;</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="6577957153487052">
+                                            <conditions>
+                                                <condition id="-9" name="Is visible" sid="802883203375828" type="Lanterna" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="7293583334803067" type="Player2">
+                                                    <param id="0" name="Animation">&quot;WalkLanterna&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="3491665188672299">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="5281318554276143" type="System" />
+                                                <condition id="-7" name="Compare instance variable" sid="6954217482997091" type="Player2">
+                                                    <param id="0" name="Instance variable">modo</param>
+                                                    <param id="1" name="Comparison">1</param>
+                                                    <param id="2" name="Value">&quot;abaixar&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="9746775824802134" type="Player2">
+                                                    <param id="0" name="Animation">&quot;Walk&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="2255649991873276">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="3849350130464815" type="System" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="4177729373821279" type="Player2">
+                                                    <param id="0" name="Animation">&quot;Abaixado&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="2677069409491525">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="6560878389418428" type="System" />
+                                <condition id="2" name="Key is down" sid="8665794021404134" type="Keyboard">
+                                    <param id="0" name="Key">37 (Left arrow)</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="3635283982957">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="1285205195844737" type="System">
+                                            <param id="0" name="Variable">Jogador</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="5215545471620706" type="Player">
+                                            <param id="0" name="Instance variable">direcao</param>
+                                            <param id="1" name="Value">&quot;esquerda&quot;</param>
+                                        </action>
+                                        <action id="4" name="Set animation" sid="3816910176606139" type="Player">
+                                            <param id="0" name="Animation">&quot;Walk&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="2889373134877483">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="6210987737951176" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="5991140593712724" type="Player2">
+                                            <param id="0" name="Instance variable">direcao</param>
+                                            <param id="1" name="Value">&quot;esquerda&quot;</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="5861263468957988">
+                                            <conditions>
+                                                <condition id="-9" name="Is visible" sid="7662937002590338" type="Lanterna" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="4721792757960636" type="Player2">
+                                                    <param id="0" name="Animation">&quot;WalkLanterna&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="6837683936650562">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="398876351863407" type="System" />
+                                                <condition id="-7" name="Compare instance variable" sid="6009614005406766" type="Player2">
+                                                    <param id="0" name="Instance variable">modo</param>
+                                                    <param id="1" name="Comparison">1</param>
+                                                    <param id="2" name="Value">&quot;abaixar&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="5016413698623863" type="Player2">
+                                                    <param id="0" name="Animation">&quot;Walk&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="1264106898408713">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="3020680201689126" type="System" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="2606670271679485" type="Player2">
+                                                    <param id="0" name="Animation">&quot;Abaixado&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="6099000594201925">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="651975218526186" type="System" />
+                                <condition id="2" name="Key is down" sid="3468974313692397" type="Keyboard">
+                                    <param id="0" name="Key">32 (Space)</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="1648250912358803">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="4811278698685333" type="System">
+                                            <param id="0" name="Variable">Jogador</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Platform" id="7" name="Simulate control" sid="5824788600220562" type="Player">
+                                            <param id="0" name="Control">2</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="4969419230697573">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="2517747133953637" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Platform" id="7" name="Simulate control" sid="3942526312076566" type="Player2">
+                                            <param id="0" name="Control">2</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="2437739643901265">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="7169178528344409" type="System" />
+                                <condition id="2" name="Key is down" sid="5028108412148017" type="Keyboard">
+                                    <param id="0" name="Key">40 (Down arrow)</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="2501706492609737">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="8084684872381055" type="System">
+                                            <param id="0" name="Variable">Jogador</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="8017773580803974" type="Player2">
+                                            <param id="0" name="Instance variable">modo</param>
+                                            <param id="1" name="Comparison">1</param>
+                                            <param id="2" name="Value">&quot;abaixar&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="2899097031838211" type="Player2">
+                                            <param id="0" name="Instance variable">modo</param>
+                                            <param id="1" name="Value">&quot;abaixar&quot;</param>
+                                        </action>
+                                        <action id="4" name="Set animation" sid="1564756192318685" type="Player2">
+                                            <param id="0" name="Animation">&quot;Abaixa&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="5847271010884916">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="903176437412479" type="System" />
+                                <condition id="2" name="Key is down" sid="9972952440217736" type="Keyboard">
+                                    <param id="0" name="Key">38 (Up arrow)</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="3190198370597256">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="4613417546335238" type="System">
+                                            <param id="0" name="Variable">Jogador</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="1660024025535287" type="Player2">
+                                            <param id="0" name="Instance variable">modo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;abaixar&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="9741780778142867" type="Player2">
+                                            <param id="0" name="Animation">&quot;Levantar&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="1422677929003238" type="Player2">
+                                            <param id="0" name="Instance variable">modo</param>
+                                            <param id="1" name="Value">&quot;empe&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="4180351918624694">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="320638777985514" type="System" />
+                                <condition id="2" name="Key is down" sid="3216568148406149" type="Keyboard">
+                                    <param id="0" name="Key">69 (E)</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="9875044943733584">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="8477399390637704" type="System">
+                                            <param id="0" name="Variable">Jogador</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="9391699789733257" type="Player">
+                                            <param id="0" name="Animation">&quot;Push&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="575976369282762">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="1062462881093041" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="6165439922395054" type="Player2">
+                                            <param id="0" name="Animation">&quot;Lanterna&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="521656068312795">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="3974647998586747" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="2163300612557548">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="3001929426263852" type="System">
+                                            <param id="0" name="Variable">Jogador</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="4885101077177313" type="Player">
+                                            <param id="0" name="Animation">&quot;Iddle&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="2110237834457345">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="5329075244234564" type="System" />
+                                        <condition id="-14" name="Compare variable" sid="4241145487508178" type="System">
+                                            <param id="0" name="Variable">Jogador</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="3344614848267569" type="Player2">
+                                            <param id="0" name="Instance variable">modo</param>
+                                            <param id="1" name="Comparison">1</param>
+                                            <param id="2" name="Value">&quot;abaixar&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="3508937150136946" type="Player2">
+                                            <param id="0" name="Animation">&quot;Iddle&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="586916907539271">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="9789058500053998" type="System" />
+                                        <condition id="-14" name="Compare variable" sid="6928546013705625" type="System">
+                                            <param id="0" name="Variable">Jogador</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="8581284768971092" type="Player2">
+                                            <param id="0" name="Instance variable">modo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;abaixar&quot;</param>
+                                        </condition>
+                                        <condition id="2" inverted="1" name="Key is down" sid="2972845888444143" type="Keyboard">
+                                            <param id="0" name="Key">37 (Left arrow)</param>
+                                        </condition>
+                                        <condition id="2" inverted="1" name="Key is down" sid="6756587550889447" type="Keyboard">
+                                            <param id="0" name="Key">39 (Right arrow)</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="2" name="Stop" sid="5541780063254" type="Player2" />
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="1375173696084651">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="6790606079014826" type="Keyboard">
+                                    <param id="0" name="Key">49 (1)</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="9553526725163252" type="System">
+                                    <param id="0" name="Variable">Jogador</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="2728239099780832">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="7713011912795418" type="Keyboard">
+                                    <param id="0" name="Key">50 (2)</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="2548297899934522" type="System">
+                                    <param id="0" name="Variable">Jogador</param>
+                                    <param id="1" name="Value">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="2302666786057042">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="1596418105044688" type="System">
+                                    <param id="0" name="Variable">Jogador</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="11" name="Set enabled" sid="5014056195423631" type="Player">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                                <action behavior="ScrollTo" id="1" name="Set enabled" sid="2171887661650405" type="Player">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                                <action behavior="Platform2" id="11" name="Set enabled" sid="3507275075883552" type="Player">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action behavior="Platform" id="11" name="Set enabled" sid="6948748241452371" type="Player2">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action behavior="Platform2" id="11" name="Set enabled" sid="1679819891067428" type="Player2">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                                <action behavior="ScrollTo" id="1" name="Set enabled" sid="9197686999271439" type="Player2">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="3949630957712753">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="4819821839977782" type="System" />
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="11" name="Set enabled" sid="395828853438366" type="Player">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action behavior="Platform2" id="11" name="Set enabled" sid="5345186246012561" type="Player">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                                <action behavior="ScrollTo" id="1" name="Set enabled" sid="7670865368939058" type="Player">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action behavior="Platform" id="11" name="Set enabled" sid="5684966109931058" type="Player2">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                                <action behavior="Platform2" id="11" name="Set enabled" sid="2921794297174801" type="Player2">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action behavior="ScrollTo" id="1" name="Set enabled" sid="8657410263487454" type="Player2">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="1776944112717641">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="9202352806128601" type="Player">
+                                    <param id="0" name="Instance variable">direcao</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;direita&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="7" name="Set mirrored" sid="1376093365941588" type="Player">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="8269883756891364">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="2018715839265017" type="Player">
+                                    <param id="0" name="Instance variable">direcao</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;esquerda&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="7" name="Set mirrored" sid="7050641435114478" type="Player">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="2028183145255196">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="2722136704983927" type="Player2">
+                                    <param id="0" name="Instance variable">direcao</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;direita&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="7" name="Set mirrored" sid="6219209776381047" type="Player2">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="2985206417414539">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="2298720284089143" type="Player2">
+                                    <param id="0" name="Instance variable">direcao</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;esquerda&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="7" name="Set mirrored" sid="9483849501655545" type="Player2">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="9574225866734709" title="Regras">
+                    <sub-events>
+                        <event-block sid="1446560180187639">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="6127559029179729" type="Player">
+                                    <param id="0" name="Object">Arcore</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="5605286699432055">
+                                    <conditions>
+                                        <condition id="2" name="Key is down" sid="3733520794939371" type="Keyboard">
+                                            <param id="0" name="Key">69 (E)</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="4305961980329231">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="1909391378879791" type="Player">
+                                                    <param id="0" name="Instance variable">direcao</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">&quot;direita&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action behavior="Physics" id="3" name="Apply impulse" sid="6015862992830746" type="Arcore">
+                                                    <param id="0" name="Impulse X">1</param>
+                                                    <param id="1" name="Implulse Y">0</param>
+                                                    <param id="2" name="Image point">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="3961264467617745">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="8352080991132959" type="System" />
+                                            </conditions>
+                                            <actions>
+                                                <action behavior="Physics" id="3" name="Apply impulse" sid="1825013300799681" type="Arcore">
+                                                    <param id="0" name="Impulse X">-1</param>
+                                                    <param id="1" name="Implulse Y">0</param>
+                                                    <param id="2" name="Image point">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="4504902222871873">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="1039533414488041" type="Keyboard">
+                                    <param id="0" name="Key">69 (E)</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="9915669769742666">
+                                    <conditions>
+                                        <condition id="1" name="Is overlapping another object" sid="3956852484891706" type="Player">
+                                            <param id="0" name="Object">Pai</param>
+                                        </condition>
+                                        <condition behavior="Pin" id="0" name="Is pinned" sid="2525606673901741" type="Pai" />
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Pin" id="1" name="Unpin" sid="466776212903166" type="Pai" />
+                                        <action behavior="Platform" id="4" name="Set jump strength" sid="5100806833231721" type="Player">
+                                            <param id="0" name="Jump strength">500</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="3598220704109162">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="1298534816490569" type="System" />
+                                        <condition behavior="Pin" id="0" inverted="1" name="Is pinned" sid="4982220475558333" type="Pai" />
+                                        <condition id="1" name="Is overlapping another object" sid="7690888510265322" type="Player">
+                                            <param id="0" name="Object">Pai</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Pin" id="0" name="Pin to object" sid="6840288671371618" type="Pai">
+                                            <param id="0" name="Pin to">Player</param>
+                                            <param id="1" name="Mode">0</param>
+                                        </action>
+                                        <action behavior="Platform" id="4" name="Set jump strength" sid="1661133736486281" type="Player">
+                                            <param id="0" name="Jump strength">250</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="1092486667343696">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="7479896561372775" type="Keyboard">
+                                    <param id="0" name="Key">69 (E)</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="3276118710734685">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="2419325586048246" type="System">
+                                            <param id="0" name="Variable">Jogador</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                        <condition id="-9" name="Is visible" sid="3088536210577154" type="Lanterna" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="9801180561908753" type="Lanterna">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="9222665591798411">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="1086690788222728" type="System" />
+                                        <condition id="-9" inverted="1" name="Is visible" sid="9484360059874253" type="Lanterna" />
+                                        <condition id="-14" name="Compare variable" sid="5952180894190509" type="System">
+                                            <param id="0" name="Variable">Jogador</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="5632244353557533" type="Lanterna">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="3080262914660464">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="7768222358422001" type="Arcore">
+                                    <param id="0" name="Object">MarcaTronco</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Solid" id="0" name="Set enabled" sid="1549117687972421" type="Arcore">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="7263162202573433">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="9007846059071503" type="System" />
+                            </conditions>
+                            <actions>
+                                <action behavior="Solid" id="0" name="Set enabled" sid="4879581656417199" type="Arcore">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="8560134418702447">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="6179484513267289" type="Vitoria">
+                                    <param id="0" name="Object">Player</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="8830482235532498" type="Vitoria">
+                                    <param id="0" name="Object">Pai</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="6032835117578172" type="Vitoria">
+                                    <param id="0" name="Object">Player2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-25" name="Go to layout (by name)" sid="3213141198777006" type="System">
+                                    <param id="0" name="Layout">Vitoria.Layout</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block any="1" sid="4943637762926987">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="819200072988254" type="Personagens">
+                                    <param id="0" name="Object">GameOver</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="7402049518997547" type="Personagens">
+                                    <param id="0" name="Object">Monstros</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="9436620487824692" type="Personagens">
+                                    <param id="0" name="Object">EstruturasDungeon</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-26" name="Restart layout" sid="4631589799543602" type="System" />
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-block>
+        <event-group description="" sid="168968470818709" title="Sons">
+            <sub-events>
+                <event-block sid="3085349517437009">
+                    <conditions>
+                        <condition behavior="Pin" id="0" name="Is pinned" sid="7480195503700958" type="Pai" />
+                        <condition behavior="Platform" id="0" name="Is moving" sid="8457417195139778" type="Player" />
+                        <condition id="5" inverted="1" name="Is tag playing" sid="988981415014243" type="Audio">
+                            <param id="0" name="Tag">&quot;paipuxando&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="7883605137862414" type="Audio">
+                            <param id="0" name="Audio file">12 arrastando pai</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;paipuxando&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="7734847162612623">
+                    <conditions>
+                        <condition behavior="Pin" id="0" inverted="1" name="Is pinned" sid="222320976622866" type="Pai" />
+                        <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="3422273927776129" type="Player" />
+                    </conditions>
+                    <actions>
+                        <action id="6" name="Stop" sid="3853938509350482" type="Audio">
+                            <param id="0" name="Tag">&quot;paipuxando&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

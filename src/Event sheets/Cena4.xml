@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Cena4</name>
+    <events>
+        <include>Controles e regras</include>
+        <event-block sid="1958137814398147">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="5927733327388655" type="Keyboard">
+                    <param id="0" name="Key">87 (W)</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="6461496860159407" type="Personagens">
+                    <param id="0" name="Object">botao_elevador</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="5791900229230435" type="PonteFerro">
+                    <param id="0" name="Instance variable">ativo</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Play" sid="214426440793001" type="Audio">
+                    <param id="0" name="Audio file">20 botão elevador</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;elevador&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3946060916481515">
+            <conditions>
+                <condition id="-8" name="Is boolean instance variable set" sid="1578365641093733" type="PonteFerro">
+                    <param id="0" name="Instance variable">ativo</param>
+                </condition>
+                <condition id="-2" name="Compare Y" sid="9233259006213996" type="PonteFerro">
+                    <param id="0" name="Comparison">3</param>
+                    <param id="1" name="Y co-ordinate">1442</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="5743061693940288" type="PonteFerro">
+                    <param id="0" name="Y">Self.Y + (25*dt)</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="3725776033357604">
+                    <conditions>
+                        <condition id="5" inverted="1" name="Is tag playing" sid="5568163852492223" type="Audio">
+                            <param id="0" name="Tag">&quot;elevador&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="6268532666291661" type="Audio">
+                            <param id="0" name="Audio file">21 elevador</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;elevador&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="1418504818718077">
+            <conditions>
+                <condition id="-2" name="Compare Y" sid="4649605833844607" type="PonteFerro">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="Y co-ordinate">1442</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="6" name="Stop" sid="2144155326617707" type="Audio">
+                    <param id="0" name="Tag">&quot;elevador&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3220619320460342">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="9752736601099393" type="Carro">
+                    <param id="0" name="Object">Pai</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="7312391759781111" type="Carro">
+                    <param id="0" name="Object">Player</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="6507500178226806" type="Carro">
+                    <param id="0" name="Object">Player2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="2472532128944415" type="Personagens">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="3296279852346026" type="System">
+                    <param id="0" name="Variable">STATUS</param>
+                    <param id="1" name="Value">&quot;PAUSED&quot;</param>
+                </action>
+                <action id="-9" name="Destroy" sid="9999012662940515" type="Player" />
+                <action id="-9" name="Destroy" sid="4501235794745648" type="Player2" />
+                <action behavior="ScrollTo" id="1" name="Set enabled" sid="4791916541703653" type="Carro">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="7631295579580468" type="Carro">
+                    <param id="0" name="Instance variable">ativo</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action behavior="Solid" id="0" name="Set enabled" sid="2528751273675025" type="Carro">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="986276168053748">
+            <conditions>
+                <condition id="-8" name="Is boolean instance variable set" sid="7639841052850146" type="Carro">
+                    <param id="0" name="Instance variable">ativo</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="1153780749073003" type="System">
+                    <param id="0" name="Variable">Jogador</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-1" name="Set X" sid="3922058981260131" type="Carro">
+                    <param id="0" name="X">Self.X - (100*dt)</param>
+                </action>
+                <action id="4" name="Set animation" sid="7897568115808677" type="Carro">
+                    <param id="0" name="Animation">&quot;Walk&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="9089474384229447">
+                    <conditions>
+                        <condition id="5" inverted="1" name="Is tag playing" sid="7153102240122143" type="Audio">
+                            <param id="0" name="Tag">&quot;musicafinal&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="33" name="Stop all" sid="6716870630958717" type="Audio" />
+                        <action id="0" name="Play" sid="4119567469144248" type="Audio">
+                            <param id="0" name="Audio file">Música 3 final</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;musicafinal&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="6559732740392374">
+            <conditions>
+                <condition id="-4" name="Is outside layout" sid="2741011949646053" type="Carro" />
+            </conditions>
+            <actions>
+                <action id="-21" name="Reset global variables" sid="991901574752237" type="System" />
+                <action id="1" name="Close" sid="938527272308465" type="Browser" />
+            </actions>
+        </event-block>
+        <event-block sid="6214766123967214">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="4797598751514508" type="System" />
+            </conditions>
+            <actions />
+        </event-block>
+    </events>
+</c2eventsheet>

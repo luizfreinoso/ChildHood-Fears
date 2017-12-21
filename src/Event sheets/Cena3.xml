@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Cena3</name>
+    <events>
+        <include>Controles e regras</include>
+        <event-block sid="5233330529695843">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="2059581981646652" type="Keyboard">
+                    <param id="0" name="Key">87 (W)</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="9116881885031569" type="Personagens">
+                    <param id="0" name="Object">botao_elevador</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="4029404535816482" type="Audio">
+                    <param id="0" name="Audio file">20 botão elevador</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;elevador&quot;</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="1971628750569111">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="4211649735257174" type="Elevador">
+                            <param id="0" name="Instance variable">posicao</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;solo&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="4260617627308311" type="Elevador">
+                            <param id="0" name="Instance variable">posicao</param>
+                            <param id="1" name="Value">&quot;topo&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2548366837086877">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="3731959899242137" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="5829504953381763" type="Elevador">
+                            <param id="0" name="Instance variable">posicao</param>
+                            <param id="1" name="Value">&quot;solo&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="6658402284302778">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="5462672959005061" type="Elevador">
+                    <param id="0" name="Instance variable">posicao</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;solo&quot;</param>
+                </condition>
+                <condition id="-2" name="Compare Y" sid="7402522456389911" type="Elevador">
+                    <param id="0" name="Comparison">3</param>
+                    <param id="1" name="Y co-ordinate">1048</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="8802284976079482" type="Elevador">
+                    <param id="0" name="Y">Elevador.Y + (60*dt)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8572840840830051">
+            <conditions>
+                <condition id="-22" name="Else" sid="2580170113956193" type="System" />
+                <condition id="-7" name="Compare instance variable" sid="5534763346815936" type="Elevador">
+                    <param id="0" name="Instance variable">posicao</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;topo&quot;</param>
+                </condition>
+                <condition id="-2" name="Compare Y" sid="7841568625240461" type="Elevador">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="Y co-ordinate">585</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="3424322685652149" type="Elevador">
+                    <param id="0" name="Y">Elevador.Y - (60*dt)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8285914187258268">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="5786877739693866" type="Personagens">
+                    <param id="0" name="Object">EspinhosTrigger</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="9592932070792787" type="EstruturasDungeon">
+                    <param id="0" name="Instance variable">ativo</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1144063674453354">
+            <conditions>
+                <condition id="-8" name="Is boolean instance variable set" sid="1338584435647202" type="EstruturasDungeon">
+                    <param id="0" name="Instance variable">ativo</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="2716385577804402">
+                    <conditions>
+                        <condition id="-24" name="For Each (ordered)" sid="5008986449106014" type="System">
+                            <param id="0" name="Object">EstruturasDungeon</param>
+                            <param id="1" name="Expression">EstruturasDungeon.order</param>
+                            <param id="2" name="Order">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="8977032651663358" type="System">
+                            <param id="0" name="Seconds">EstruturasDungeon.order * 0.2</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="3925851272719022" type="EstruturasDungeon">
+                            <param id="0" name="Y">EstruturasDungeon.Y + (300*dt)</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-group description="" sid="7140126647327241" title="som3">
+            <sub-events>
+                <event-block any="1" sid="9470477905024954">
+                    <conditions>
+                        <condition behavior="Platform" id="0" name="Is moving" sid="2414299081003041" type="Player" />
+                        <condition behavior="Platform" id="0" name="Is moving" sid="4842930871422182" type="Player2" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="2530404194692199">
+                            <conditions>
+                                <condition id="5" inverted="1" name="Is tag playing" sid="1192860635110516" type="Audio">
+                                    <param id="0" name="Tag">&quot;andarcaverna&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="7845205406280838" type="Audio">
+                                    <param id="0" name="Audio file">19 andando caverna</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;andarcaverna&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="4988394709997943">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="9720096770605142" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="6" name="Stop" sid="7409200583935689" type="Audio">
+                            <param id="0" name="Tag">&quot;ventoFloresta&quot;</param>
+                        </action>
+                        <action id="0" name="Play" sid="2766470376506685" type="Audio">
+                            <param id="0" name="Audio file">18 ambiente caverna</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;caverna&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

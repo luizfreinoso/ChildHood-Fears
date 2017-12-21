@@ -1,0 +1,2181 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Childhood Fears</name>
+    <description>Jogo ARCADE indie para o Global Game Jam na UCL, Serra.</description>
+    <version>1.0.0.0</version>
+    <author>Luiz Fernando Reinoso, Gealdo Perreira Junior, Gustavo Nobre, Rafael de Alvarenga Rosa e Alcimar Perreira</author>
+    <author-email>cuppixel@gmail.com</author-email>
+    <author-website>http://cuppixel.blogspot.com</author-website>
+    <app-id>com.cuppixel</app-id>
+    <unique-id>2m2oqhlgof90t</unique-id>
+    <saved-with-version>19500</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+        <behavior author="Scirra" id="Persist" version="1">Persist</behavior>
+        <behavior author="Scirra" id="Physics" version="1">Physics</behavior>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects>
+        <effect author="Danguafer/Silexars" id="pulse">Pulse</effect>
+        <effect author="Viktor Korsun" id="water">Water</effect>
+    </used-effects>
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>1280</width>
+        <height>720</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <first-layout>Cena1</first-layout>
+    <use-loader-layout>1</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Progress bar &amp; logo</prop>
+        <prop name="Orientations">Landscape</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D web</prop>
+        <prop name="Preview browser">Node-Webkit</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-folder name="Arvores">
+            <object-type name="Arvore1" sid="5628132466505429">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3738172040092706" speed="5">
+                        <frame duration="1" hotspotX="2.70455" hotspotY="0.388889" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\arvoresv1 (1).png">
+                            <collision-poly>
+                                <point x="1" y="0.763889" />
+                                <point x="1" y="0.111111" />
+                                <point x="1" y="0.0972222" />
+                                <point x="1" y="0.388889" />
+                                <point x="1" y="0.638889" />
+                                <point x="1" y="0.520833" />
+                                <point x="0.727273" y="0.916667" />
+                                <point x="0.159091" y="0.388889" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Arvore2" sid="1760788029098263">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="712550953961589" speed="5">
+                        <frame duration="1" hotspotX="1.55738" hotspotY="0.435897" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\arvoresv1 (1).png">
+                            <collision-poly>
+                                <point x="0.483607" y="0.782051" />
+                                <point x="1" y="0.179487" />
+                                <point x="1" y="0.166667" />
+                                <point x="1" y="0.435897" />
+                                <point x="1" y="0.666667" />
+                                <point x="1" y="0.557692" />
+                                <point x="0" y="0.923077" />
+                                <point x="0" y="0.435897" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Arvore3" sid="5990114724482848">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6162482039932832" speed="5">
+                        <frame duration="1" hotspotX="0.715847" hotspotY="0.386364" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\arvoresv1 (1).png">
+                            <collision-poly>
+                                <point x="1" y="0.386364" />
+                                <point x="1" y="0.962121" />
+                                <point x="0.715847" y="0.530303" />
+                                <point x="0" y="0.659091" />
+                                <point x="0" y="0.386364" />
+                                <point x="0" y="0.0681818" />
+                                <point x="0.715847" y="0.0833333" />
+                                <point x="1" y="0.795455" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Arvore4" sid="7418824753942449">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6622382680508583" speed="5">
+                        <frame duration="1" hotspotX="-3.01695" hotspotY="0.575581" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\arvoresv1 (1).png">
+                            <collision-poly>
+                                <point x="0" y="0.889535" />
+                                <point x="0" y="0.343023" />
+                                <point x="0.830508" y="0.331395" />
+                                <point x="0.830508" y="0.575581" />
+                                <point x="0.728814" y="0.784884" />
+                                <point x="0" y="0.686047" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0.575581" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Cenas">
+            <object-type name="Cena1" sid="7736659367464892">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="5455390840405099">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4444665520537339" speed="5">
+                        <frame duration="1" hotspotX="0.500391" hotspotY="0.500694" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\cenario1 (2).png">
+                            <collision-poly>
+                                <point x="0.224269" y="0.514451" />
+                                <point x="0.393283" y="0.589595" />
+                                <point x="0.713435" y="0.597302" />
+                                <point x="0.99675" y="0.591522" />
+                                <point x="1" y="1" />
+                                <point x="0" y="0.763006" />
+                                <point x="0" y="0.495183" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Background" sid="9149252841810749">
+                <plugin id="TiledBg" />
+                <effects>
+                    <effect-type name="Pulse">
+                        <effect id="pulse" />
+                    </effect-type>
+                </effects>
+                <texture original-source="G:\bg1teste1.png" />
+            </object-type>
+            <object-type name="Cena1_2" sid="3562720760879317">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="6766462796260037">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7058404227149012" speed="5">
+                        <frame duration="1" hotspotX="0.501683" hotspotY="0.502222" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\cenario1 (2).png">
+                            <collision-poly>
+                                <point x="0.242857" y="0" />
+                                <point x="0.982507" y="0.960077" />
+                                <point x="0.715131" y="0.987173" />
+                                <point x="0.402962" y="0.976851" />
+                                <point x="0.111112" y="0.959995" />
+                                <point x="0.00673411" y="0.99435" />
+                                <point x="0" y="0.00444444" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Cena1_3" sid="6891025338134823">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Fade" sid="3141622593133114">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2065899021329402" speed="5">
+                        <frame duration="1" hotspotX="0.500907" hotspotY="0.500835" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Img_Originais\cenario2.png">
+                            <collision-poly>
+                                <point x="0.288566" y="0.0100167" />
+                                <point x="0.974592" y="0.889816" />
+                                <point x="0.0254083" y="0.889816" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Cena2" sid="2641806405669692">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6504278489523845" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Img_Originais\cenario2espinhos.png">
+                            <collision-poly>
+                                <point x="0.157031" y="0.501389" />
+                                <point x="0.753125" y="0.574306" />
+                                <point x="0.882813" y="0.663889" />
+                                <point x="1" y="0.716666" />
+                                <point x="0.971875" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0.488889" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Cena3" sid="7119708515717141">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4988055799650684" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\cenario3v2.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Cena4" sid="6391788388954384">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7770307243772224" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\ArquivosSAI\cenario4.png">
+                            <collision-poly>
+                                <point x="0" y="0" />
+                                <point x="0.5" y="0.886806" />
+                                <point x="0.729948" y="0.720139" />
+                                <point x="0.148698" y="0.5" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Engine">
+            <object-type name="Mouse" sid="8132074219374095">
+                <plugin id="Mouse" />
+            </object-type>
+            <object-type name="Keyboard" sid="6870582445261947">
+                <plugin id="Keyboard" />
+            </object-type>
+            <object-type name="Browser" sid="6108481920848951">
+                <plugin id="Browser" />
+            </object-type>
+            <object-type name="Audio" sid="7591588044004881">
+                <plugin id="Audio" />
+            </object-type>
+        </object-folder>
+        <object-folder name="Personagens">
+            <object-type name="Player" sid="960803956212225">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable comment="direcao do personagem" name="direcao" sid="8309836455169113" type="string" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="Platform" sid="4791644486775275">
+                        <behavior id="Platform" />
+                    </behavior-type>
+                    <behavior-type name="ScrollTo" sid="8924752321934969">
+                        <behavior id="scrollto" />
+                    </behavior-type>
+                    <behavior-type name="BoundToLayout" sid="814738312222724">
+                        <behavior id="bound" />
+                    </behavior-type>
+                    <behavior-type name="Platform2" sid="2089467361899926">
+                        <behavior id="Platform" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="29" loop="1" name="Walk" pingpong="0" repeatcount="1" repeatto="0" sid="2236535794118688" speed="24">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\GameJam\Animações\Amy_Walk\Amy_Walk(48).png">
+                            <image-point name="Imagepoint 1" x="0.222581" y="0.537594" />
+                            <image-point name="Imagepoint 2" x="0.5" y="1" />
+                            <collision-poly>
+                                <point x="0.23871" y="0.255639" />
+                                <point x="0.5" y="0.0319549" />
+                                <point x="0.770968" y="0.0394737" />
+                                <point x="0.651613" y="0.665414" />
+                                <point x="0.735484" y="0.951128" />
+                                <point x="0.190323" y="0.958646" />
+                                <point x="0.3" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\GameJam\Animações\Amy_Walk\Amy_Walk(49).png">
+                            <image-point name="Imagepoint 1" x="0.214286" y="0.543726" />
+                            <image-point name="Imagepoint 2" x="0.5" y="1" />
+                            <collision-poly>
+                                <point x="0.23871" y="0.255639" />
+                                <point x="0.5" y="0.0319549" />
+                                <point x="0.770968" y="0.0394737" />
+                                <point x="0.651613" y="0.665414" />
+                                <point x="0.735484" y="0.951128" />
+                                <point x="0.190323" y="0.958646" />
+                                <point x="0.3" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\GameJam\Animações\Amy_Walk\Amy_Walk(51).png">
+                            <image-point name="Imagepoint 1" x="0.215084" y="0.544402" />
+                            <image-point name="Imagepoint 2" x="0.5" y="1" />
+                            <collision-poly>
+                                <point x="0.23871" y="0.255639" />
+                                <point x="0.5" y="0.0319549" />
+                                <point x="0.770968" y="0.0394737" />
+                                <point x="0.651613" y="0.665414" />
+                                <point x="0.735484" y="0.951128" />
+                                <point x="0.190323" y="0.958646" />
+                                <point x="0.3" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.50152" hotspotY="0.500963" original-source="G:\GameJam\Animações\Amy_Walk\Amy_Walk(53).png">
+                            <image-point name="Imagepoint 1" x="0.215805" y="0.543353" />
+                            <image-point name="Imagepoint 2" x="0.50152" y="1" />
+                            <collision-poly>
+                                <point x="0.23871" y="0.255639" />
+                                <point x="0.5" y="0.0319549" />
+                                <point x="0.770968" y="0.0394737" />
+                                <point x="0.651613" y="0.665414" />
+                                <point x="0.735484" y="0.951128" />
+                                <point x="0.190323" y="0.958646" />
+                                <point x="0.3" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.501754" hotspotY="0.5" original-source="G:\GameJam\Animações\Amy_Walk\Amy_Walk(54).png">
+                            <image-point name="Imagepoint 1" x="0.214035" y="0.543726" />
+                            <image-point name="Imagepoint 2" x="0.501754" y="1" />
+                            <collision-poly>
+                                <point x="0.23871" y="0.255639" />
+                                <point x="0.5" y="0.0319549" />
+                                <point x="0.770968" y="0.0394737" />
+                                <point x="0.651613" y="0.665414" />
+                                <point x="0.735484" y="0.951128" />
+                                <point x="0.190323" y="0.958646" />
+                                <point x="0.3" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.500931" original-source="G:\GameJam\Animações\Amy_Walk\Amy_Walk(55).png">
+                            <image-point name="Imagepoint 1" x="0.216102" y="0.543762" />
+                            <image-point name="Imagepoint 2" x="0.5" y="1" />
+                            <collision-poly>
+                                <point x="0.23871" y="0.255639" />
+                                <point x="0.5" y="0.0319549" />
+                                <point x="0.770968" y="0.0394737" />
+                                <point x="0.651613" y="0.665414" />
+                                <point x="0.735484" y="0.951128" />
+                                <point x="0.190323" y="0.958646" />
+                                <point x="0.3" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\GameJam\Animações\Amy_Walk\Amy_Walk(56).png">
+                            <image-point name="Imagepoint 1" x="0.212264" y="0.543956" />
+                            <image-point name="Imagepoint 2" x="0.5" y="1" />
+                            <collision-poly>
+                                <point x="0.23871" y="0.255639" />
+                                <point x="0.5" y="0.0319549" />
+                                <point x="0.770968" y="0.0394737" />
+                                <point x="0.651613" y="0.665414" />
+                                <point x="0.735484" y="0.951128" />
+                                <point x="0.190323" y="0.958646" />
+                                <point x="0.3" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.502645" hotspotY="0.500904" original-source="G:\GameJam\Animações\Amy_Walk\Amy_Walk(57).png">
+                            <image-point name="Imagepoint 1" x="0.216931" y="0.544304" />
+                            <image-point name="Imagepoint 2" x="0.502645" y="1" />
+                            <collision-poly>
+                                <point x="0.23871" y="0.255639" />
+                                <point x="0.5" y="0.0319549" />
+                                <point x="0.770968" y="0.0394737" />
+                                <point x="0.651613" y="0.665414" />
+                                <point x="0.735484" y="0.951128" />
+                                <point x="0.190323" y="0.958646" />
+                                <point x="0.3" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.502674" hotspotY="0.500891" original-source="G:\GameJam\Animações\Amy_Walk\Amy_Walk(58).png">
+                            <image-point name="Imagepoint 1" x="0.213904" y="0.543672" />
+                            <image-point name="Imagepoint 2" x="0.502674" y="1" />
+                            <collision-poly>
+                                <point x="0.23871" y="0.255639" />
+                                <point x="0.5" y="0.0319549" />
+                                <point x="0.770968" y="0.0394737" />
+                                <point x="0.651613" y="0.665414" />
+                                <point x="0.735484" y="0.951128" />
+                                <point x="0.190323" y="0.958646" />
+                                <point x="0.3" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\GameJam\Animações\Amy_Walk\Amy_Walk(59).png">
+                            <image-point name="Imagepoint 1" x="0.214286" y="0.544014" />
+                            <image-point name="Imagepoint 2" x="0.5" y="1" />
+                            <collision-poly>
+                                <point x="0.23871" y="0.255639" />
+                                <point x="0.5" y="0.0319549" />
+                                <point x="0.770968" y="0.0394737" />
+                                <point x="0.651613" y="0.665414" />
+                                <point x="0.735484" y="0.951128" />
+                                <point x="0.190323" y="0.958646" />
+                                <point x="0.3" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.501916" hotspotY="0.500882" original-source="G:\GameJam\Animações\Amy_Walk\Amy_Walk(60).png">
+                            <image-point name="Imagepoint 1" x="0.214559" y="0.54321" />
+                            <image-point name="Imagepoint 2" x="0.501916" y="1" />
+                            <collision-poly>
+                                <point x="0.23871" y="0.255639" />
+                                <point x="0.5" y="0.0319549" />
+                                <point x="0.770968" y="0.0394737" />
+                                <point x="0.651613" y="0.665414" />
+                                <point x="0.735484" y="0.951128" />
+                                <point x="0.190323" y="0.958646" />
+                                <point x="0.3" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.501706" hotspotY="0.500894" original-source="G:\GameJam\Animações\Amy_Walk\Amy_Walk(61).png">
+                            <image-point name="Imagepoint 1" x="0.215017" y="0.543828" />
+                            <image-point name="Imagepoint 2" x="0.501706" y="1" />
+                            <collision-poly>
+                                <point x="0.23871" y="0.255639" />
+                                <point x="0.5" y="0.0319549" />
+                                <point x="0.770968" y="0.0394737" />
+                                <point x="0.651613" y="0.665414" />
+                                <point x="0.735484" y="0.951128" />
+                                <point x="0.190323" y="0.958646" />
+                                <point x="0.3" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.501558" hotspotY="0.500924" original-source="G:\GameJam\Animações\Amy_Walk\Amy_Walk(62).png">
+                            <image-point name="Imagepoint 1" x="0.214953" y="0.543438" />
+                            <image-point name="Imagepoint 2" x="0.501558" y="1" />
+                            <collision-poly>
+                                <point x="0.23871" y="0.255639" />
+                                <point x="0.5" y="0.0319549" />
+                                <point x="0.770968" y="0.0394737" />
+                                <point x="0.651613" y="0.665414" />
+                                <point x="0.735484" y="0.951128" />
+                                <point x="0.190323" y="0.958646" />
+                                <point x="0.3" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.501449" hotspotY="0.500967" original-source="G:\GameJam\Animações\Amy_Walk\Amy_Walk(63).png">
+                            <image-point name="Imagepoint 1" x="0.214493" y="0.54352" />
+                            <image-point name="Imagepoint 2" x="0.501449" y="1" />
+                            <collision-poly>
+                                <point x="0.23871" y="0.255639" />
+                                <point x="0.5" y="0.0319549" />
+                                <point x="0.770968" y="0.0394737" />
+                                <point x="0.651613" y="0.665414" />
+                                <point x="0.735484" y="0.951128" />
+                                <point x="0.190323" y="0.958646" />
+                                <point x="0.3" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.50137" hotspotY="0.5" original-source="G:\GameJam\Animações\Amy_Walk\Amy_Walk(64).png">
+                            <image-point name="Imagepoint 1" x="0.213699" y="0.543307" />
+                            <image-point name="Imagepoint 2" x="0.50137" y="1" />
+                            <collision-poly>
+                                <point x="0.23871" y="0.255639" />
+                                <point x="0.5" y="0.0319549" />
+                                <point x="0.770968" y="0.0394737" />
+                                <point x="0.651613" y="0.665414" />
+                                <point x="0.735484" y="0.951128" />
+                                <point x="0.190323" y="0.958646" />
+                                <point x="0.3" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\GameJam\Animações\Amy_Walk\Amy_Walk(65).png">
+                            <image-point name="Imagepoint 1" x="0.21466" y="0.543307" />
+                            <image-point name="Imagepoint 2" x="0.5" y="1" />
+                            <collision-poly>
+                                <point x="0.23871" y="0.255639" />
+                                <point x="0.5" y="0.0319549" />
+                                <point x="0.770968" y="0.0394737" />
+                                <point x="0.651613" y="0.665414" />
+                                <point x="0.735484" y="0.951128" />
+                                <point x="0.190323" y="0.958646" />
+                                <point x="0.3" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.500978" original-source="G:\GameJam\Animações\Amy_Walk\Amy_Walk(66).png">
+                            <image-point name="Imagepoint 1" x="0.214646" y="0.544031" />
+                            <image-point name="Imagepoint 2" x="0.5" y="1" />
+                            <collision-poly>
+                                <point x="0.23871" y="0.255639" />
+                                <point x="0.5" y="0.0319549" />
+                                <point x="0.770968" y="0.0394737" />
+                                <point x="0.651613" y="0.665414" />
+                                <point x="0.735484" y="0.951128" />
+                                <point x="0.190323" y="0.958646" />
+                                <point x="0.3" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\GameJam\Animações\Amy_Walk\Amy_Walk(67).png">
+                            <image-point name="Imagepoint 1" x="0.21393" y="0.544747" />
+                            <image-point name="Imagepoint 2" x="0.5" y="1" />
+                            <collision-poly>
+                                <point x="0.23871" y="0.255639" />
+                                <point x="0.5" y="0.0319549" />
+                                <point x="0.770968" y="0.0394737" />
+                                <point x="0.651613" y="0.665414" />
+                                <point x="0.735484" y="0.951128" />
+                                <point x="0.190323" y="0.958646" />
+                                <point x="0.3" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.500967" original-source="G:\GameJam\Animações\Amy_Walk\Amy_Walk(68).png">
+                            <image-point name="Imagepoint 1" x="0.215" y="0.54352" />
+                            <image-point name="Imagepoint 2" x="0.5" y="1" />
+                            <collision-poly>
+                                <point x="0.23871" y="0.255639" />
+                                <point x="0.5" y="0.0319549" />
+                                <point x="0.770968" y="0.0394737" />
+                                <point x="0.651613" y="0.665414" />
+                                <point x="0.735484" y="0.951128" />
+                                <point x="0.190323" y="0.958646" />
+                                <point x="0.3" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\GameJam\Animações\Amy_Walk\Amy_Walk(69).png">
+                            <image-point name="Imagepoint 1" x="0.215385" y="0.544231" />
+                            <image-point name="Imagepoint 2" x="0.5" y="1" />
+                            <collision-poly>
+                                <point x="0.23871" y="0.255639" />
+                                <point x="0.5" y="0.0319549" />
+                                <point x="0.770968" y="0.0394737" />
+                                <point x="0.651613" y="0.665414" />
+                                <point x="0.735484" y="0.951128" />
+                                <point x="0.190323" y="0.958646" />
+                                <point x="0.3" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.501433" hotspotY="0.5" original-source="G:\GameJam\Animações\Amy_Walk\Amy_Walk(71).png">
+                            <image-point name="Imagepoint 1" x="0.2149" y="0.543893" />
+                            <image-point name="Imagepoint 2" x="0.501433" y="1" />
+                            <collision-poly>
+                                <point x="0.23871" y="0.255639" />
+                                <point x="0.5" y="0.0319549" />
+                                <point x="0.770968" y="0.0394737" />
+                                <point x="0.651613" y="0.665414" />
+                                <point x="0.735484" y="0.951128" />
+                                <point x="0.190323" y="0.958646" />
+                                <point x="0.3" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.501597" hotspotY="0.5" original-source="G:\GameJam\Animações\Amy_Walk\Amy_Walk(72).png">
+                            <image-point name="Imagepoint 1" x="0.214058" y="0.543893" />
+                            <image-point name="Imagepoint 2" x="0.501597" y="1" />
+                            <collision-poly>
+                                <point x="0.23871" y="0.255639" />
+                                <point x="0.5" y="0.0319549" />
+                                <point x="0.770968" y="0.0394737" />
+                                <point x="0.651613" y="0.665414" />
+                                <point x="0.735484" y="0.951128" />
+                                <point x="0.190323" y="0.958646" />
+                                <point x="0.3" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.501792" hotspotY="0.500938" original-source="G:\GameJam\Animações\Amy_Walk\Amy_Walk(73).png">
+                            <image-point name="Imagepoint 1" x="0.215054" y="0.54409" />
+                            <image-point name="Imagepoint 2" x="0.501792" y="1" />
+                            <collision-poly>
+                                <point x="0.23871" y="0.255639" />
+                                <point x="0.5" y="0.0319549" />
+                                <point x="0.770968" y="0.0394737" />
+                                <point x="0.651613" y="0.665414" />
+                                <point x="0.735484" y="0.951128" />
+                                <point x="0.190323" y="0.958646" />
+                                <point x="0.3" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.502058" hotspotY="0.500911" original-source="G:\GameJam\Animações\Amy_Walk\Amy_Walk(74).png">
+                            <image-point name="Imagepoint 1" x="0.213992" y="0.544627" />
+                            <image-point name="Imagepoint 2" x="0.502058" y="1" />
+                            <collision-poly>
+                                <point x="0.23871" y="0.255639" />
+                                <point x="0.5" y="0.0319549" />
+                                <point x="0.770968" y="0.0394737" />
+                                <point x="0.651613" y="0.665414" />
+                                <point x="0.735484" y="0.951128" />
+                                <point x="0.190323" y="0.958646" />
+                                <point x="0.3" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.501916" hotspotY="0.500894" original-source="G:\GameJam\Animações\Amy_Walk\Amy_Walk(75).png">
+                            <image-point name="Imagepoint 1" x="0.214559" y="0.543828" />
+                            <image-point name="Imagepoint 2" x="0.501916" y="1" />
+                            <collision-poly>
+                                <point x="0.23871" y="0.255639" />
+                                <point x="0.5" y="0.0319549" />
+                                <point x="0.770968" y="0.0394737" />
+                                <point x="0.651613" y="0.665414" />
+                                <point x="0.735484" y="0.951128" />
+                                <point x="0.190323" y="0.958646" />
+                                <point x="0.3" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.501577" hotspotY="0.500901" original-source="G:\GameJam\Animações\Amy_Walk\Amy_Walk(76).png">
+                            <image-point name="Imagepoint 1" x="0.214511" y="0.544144" />
+                            <image-point name="Imagepoint 2" x="0.501577" y="1" />
+                            <collision-poly>
+                                <point x="0.23871" y="0.255639" />
+                                <point x="0.5" y="0.0319549" />
+                                <point x="0.770968" y="0.0394737" />
+                                <point x="0.651613" y="0.665414" />
+                                <point x="0.735484" y="0.951128" />
+                                <point x="0.190323" y="0.958646" />
+                                <point x="0.3" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.501401" hotspotY="0.5" original-source="G:\GameJam\Animações\Amy_Walk\Amy_Walk(77).png">
+                            <image-point name="Imagepoint 1" x="0.215686" y="0.544776" />
+                            <image-point name="Imagepoint 2" x="0.501401" y="1" />
+                            <collision-poly>
+                                <point x="0.23871" y="0.255639" />
+                                <point x="0.5" y="0.0319549" />
+                                <point x="0.770968" y="0.0394737" />
+                                <point x="0.651613" y="0.665414" />
+                                <point x="0.735484" y="0.951128" />
+                                <point x="0.190323" y="0.958646" />
+                                <point x="0.3" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\GameJam\Animações\Amy_Walk\Amy_Walk(78).png">
+                            <image-point name="Imagepoint 1" x="0.213542" y="0.543233" />
+                            <image-point name="Imagepoint 2" x="0.5" y="1" />
+                            <collision-poly>
+                                <point x="0.23871" y="0.255639" />
+                                <point x="0.5" y="0.0319549" />
+                                <point x="0.770968" y="0.0394737" />
+                                <point x="0.651613" y="0.665414" />
+                                <point x="0.735484" y="0.951128" />
+                                <point x="0.190323" y="0.958646" />
+                                <point x="0.3" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.501217" hotspotY="0.5" original-source="G:\GameJam\Animações\Amy_Walk\Amy_Walk(80).png">
+                            <image-point name="Imagepoint 1" x="0.214112" y="0.543561" />
+                            <image-point name="Imagepoint 2" x="0.501217" y="1" />
+                            <collision-poly>
+                                <point x="0.23871" y="0.255639" />
+                                <point x="0.5" y="0.0319549" />
+                                <point x="0.770968" y="0.0394737" />
+                                <point x="0.651613" y="0.665414" />
+                                <point x="0.735484" y="0.951128" />
+                                <point x="0.190323" y="0.958646" />
+                                <point x="0.3" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="2" loop="1" name="Iddle" pingpong="1" repeatcount="1" repeatto="0" sid="3973745096689724" speed="1">
+                        <frame duration="1" hotspotX="0.502283" hotspotY="0.500898">
+                            <image-point name="Imagepoint 1" x="0.214612" y="0.543986" />
+                            <image-point name="Imagepoint 2" x="0.502283" y="1" />
+                            <collision-poly>
+                                <point x="0.23871" y="0.255639" />
+                                <point x="0.5" y="0.0319549" />
+                                <point x="0.770968" y="0.0394737" />
+                                <point x="0.651613" y="0.665414" />
+                                <point x="0.735484" y="0.951128" />
+                                <point x="0.190323" y="0.958646" />
+                                <point x="0.3" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.500898">
+                            <image-point name="Imagepoint 1" x="0.214953" y="0.543986" />
+                            <image-point name="Imagepoint 2" x="0.5" y="1" />
+                            <collision-poly>
+                                <point x="0.23871" y="0.255639" />
+                                <point x="0.5" y="0.0319549" />
+                                <point x="0.770968" y="0.0394737" />
+                                <point x="0.651613" y="0.665414" />
+                                <point x="0.735484" y="0.951128" />
+                                <point x="0.190323" y="0.958646" />
+                                <point x="0.3" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="17" loop="0" name="Push" pingpong="0" repeatcount="1" repeatto="0" sid="3533908389867408" speed="30">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.500898" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Amy_Push\Amy_Push(8).png">
+                            <image-point name="Imagepoint 2" x="0.5" y="1" />
+                            <collision-poly>
+                                <point x="0.23871" y="0.255639" />
+                                <point x="0.5" y="0.0319549" />
+                                <point x="0.770968" y="0.0394737" />
+                                <point x="0.651613" y="0.665414" />
+                                <point x="0.735484" y="0.951128" />
+                                <point x="0.190323" y="0.958646" />
+                                <point x="0.3" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.502183" hotspotY="0.500898" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Amy_Push\Amy_Push(9).png">
+                            <image-point name="Imagepoint 2" x="0.502183" y="1" />
+                            <collision-poly>
+                                <point x="0.23871" y="0.255639" />
+                                <point x="0.5" y="0.0319549" />
+                                <point x="0.770968" y="0.0394737" />
+                                <point x="0.651613" y="0.665414" />
+                                <point x="0.735484" y="0.951128" />
+                                <point x="0.190323" y="0.958646" />
+                                <point x="0.3" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.501887" hotspotY="0.500898" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Amy_Push\Amy_Push(10).png">
+                            <image-point name="Imagepoint 2" x="0.501887" y="1" />
+                            <collision-poly>
+                                <point x="0.23871" y="0.255639" />
+                                <point x="0.5" y="0.0319549" />
+                                <point x="0.770968" y="0.0394737" />
+                                <point x="0.651613" y="0.665414" />
+                                <point x="0.735484" y="0.951128" />
+                                <point x="0.190323" y="0.958646" />
+                                <point x="0.3" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.500898" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Amy_Push\Amy_Push(11).png">
+                            <image-point name="Imagepoint 2" x="0.5" y="1" />
+                            <collision-poly>
+                                <point x="0.23871" y="0.255639" />
+                                <point x="0.5" y="0.0319549" />
+                                <point x="0.770968" y="0.0394737" />
+                                <point x="0.651613" y="0.665414" />
+                                <point x="0.735484" y="0.951128" />
+                                <point x="0.190323" y="0.958646" />
+                                <point x="0.3" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.501639" hotspotY="0.500898" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Amy_Push\Amy_Push(12).png">
+                            <image-point name="Imagepoint 2" x="0.501639" y="1" />
+                            <collision-poly>
+                                <point x="0.23871" y="0.255639" />
+                                <point x="0.5" y="0.0319549" />
+                                <point x="0.770968" y="0.0394737" />
+                                <point x="0.651613" y="0.665414" />
+                                <point x="0.735484" y="0.951128" />
+                                <point x="0.190323" y="0.958646" />
+                                <point x="0.3" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.500898" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Amy_Push\Amy_Push(13).png">
+                            <image-point name="Imagepoint 2" x="0.5" y="1" />
+                            <collision-poly>
+                                <point x="0.23871" y="0.255639" />
+                                <point x="0.5" y="0.0319549" />
+                                <point x="0.770968" y="0.0394737" />
+                                <point x="0.651613" y="0.665414" />
+                                <point x="0.735484" y="0.951128" />
+                                <point x="0.190323" y="0.958646" />
+                                <point x="0.3" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.500898" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Amy_Push\Amy_Push(14).png">
+                            <image-point name="Imagepoint 2" x="0.5" y="1" />
+                            <collision-poly>
+                                <point x="0.23871" y="0.255639" />
+                                <point x="0.5" y="0.0319549" />
+                                <point x="0.770968" y="0.0394737" />
+                                <point x="0.651613" y="0.665414" />
+                                <point x="0.735484" y="0.951128" />
+                                <point x="0.190323" y="0.958646" />
+                                <point x="0.3" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.50211" hotspotY="0.500898" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Amy_Push\Amy_Push(15).png">
+                            <image-point name="Imagepoint 2" x="0.50211" y="1" />
+                            <collision-poly>
+                                <point x="0.23871" y="0.255639" />
+                                <point x="0.5" y="0.0319549" />
+                                <point x="0.770968" y="0.0394737" />
+                                <point x="0.651613" y="0.665414" />
+                                <point x="0.735484" y="0.951128" />
+                                <point x="0.190323" y="0.958646" />
+                                <point x="0.3" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.500898" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Amy_Push\Amy_Push(16).png">
+                            <image-point name="Imagepoint 2" x="0.5" y="1" />
+                            <collision-poly>
+                                <point x="0.23871" y="0.255639" />
+                                <point x="0.5" y="0.0319549" />
+                                <point x="0.770968" y="0.0394737" />
+                                <point x="0.651613" y="0.665414" />
+                                <point x="0.735484" y="0.951128" />
+                                <point x="0.190323" y="0.958646" />
+                                <point x="0.3" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.500898" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Amy_Push\Amy_Push(17).png">
+                            <image-point name="Imagepoint 2" x="0.5" y="1" />
+                            <collision-poly>
+                                <point x="0.23871" y="0.255639" />
+                                <point x="0.5" y="0.0319549" />
+                                <point x="0.770968" y="0.0394737" />
+                                <point x="0.651613" y="0.665414" />
+                                <point x="0.735484" y="0.951128" />
+                                <point x="0.190323" y="0.958646" />
+                                <point x="0.3" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.501792" hotspotY="0.500898" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Amy_Push\Amy_Push(18).png">
+                            <image-point name="Imagepoint 2" x="0.501792" y="1" />
+                            <collision-poly>
+                                <point x="0.23871" y="0.255639" />
+                                <point x="0.5" y="0.0319549" />
+                                <point x="0.770968" y="0.0394737" />
+                                <point x="0.651613" y="0.665414" />
+                                <point x="0.735484" y="0.951128" />
+                                <point x="0.190323" y="0.958646" />
+                                <point x="0.3" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.500898" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Amy_Push\Amy_Push(19).png">
+                            <image-point name="Imagepoint 2" x="0.5" y="1" />
+                            <collision-poly>
+                                <point x="0.23871" y="0.255639" />
+                                <point x="0.5" y="0.0319549" />
+                                <point x="0.770968" y="0.0394737" />
+                                <point x="0.651613" y="0.665414" />
+                                <point x="0.735484" y="0.951128" />
+                                <point x="0.190323" y="0.958646" />
+                                <point x="0.3" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.500898" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Amy_Push\Amy_Push(20).png">
+                            <image-point name="Imagepoint 2" x="0.5" y="1" />
+                            <collision-poly>
+                                <point x="0.23871" y="0.255639" />
+                                <point x="0.5" y="0.0319549" />
+                                <point x="0.770968" y="0.0394737" />
+                                <point x="0.651613" y="0.665414" />
+                                <point x="0.735484" y="0.951128" />
+                                <point x="0.190323" y="0.958646" />
+                                <point x="0.3" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.500898" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Amy_Push\Amy_Push(21).png">
+                            <image-point name="Imagepoint 2" x="0.5" y="1" />
+                            <collision-poly>
+                                <point x="0.23871" y="0.255639" />
+                                <point x="0.5" y="0.0319549" />
+                                <point x="0.770968" y="0.0394737" />
+                                <point x="0.651613" y="0.665414" />
+                                <point x="0.735484" y="0.951128" />
+                                <point x="0.190323" y="0.958646" />
+                                <point x="0.3" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.500898" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Amy_Push\Amy_Push(22).png">
+                            <image-point name="Imagepoint 2" x="0.5" y="1" />
+                            <collision-poly>
+                                <point x="0.23871" y="0.255639" />
+                                <point x="0.5" y="0.0319549" />
+                                <point x="0.770968" y="0.0394737" />
+                                <point x="0.651613" y="0.665414" />
+                                <point x="0.735484" y="0.951128" />
+                                <point x="0.190323" y="0.958646" />
+                                <point x="0.3" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.502222" hotspotY="0.500898" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Amy_Push\Amy_Push(23).png">
+                            <image-point name="Imagepoint 2" x="0.502222" y="1" />
+                            <collision-poly>
+                                <point x="0.23871" y="0.255639" />
+                                <point x="0.5" y="0.0319549" />
+                                <point x="0.770968" y="0.0394737" />
+                                <point x="0.651613" y="0.665414" />
+                                <point x="0.735484" y="0.951128" />
+                                <point x="0.190323" y="0.958646" />
+                                <point x="0.3" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.502262" hotspotY="0.500898" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Amy_Push\Amy_Push(24).png">
+                            <image-point name="Imagepoint 2" x="0.502262" y="1" />
+                            <collision-poly>
+                                <point x="0.23871" y="0.255639" />
+                                <point x="0.5" y="0.0319549" />
+                                <point x="0.770968" y="0.0394737" />
+                                <point x="0.651613" y="0.665414" />
+                                <point x="0.735484" y="0.951128" />
+                                <point x="0.190323" y="0.958646" />
+                                <point x="0.3" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Player2" sid="8525250872957718">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable comment="direção do personagem" name="direcao" sid="3712432014027207" type="string" />
+                    <instance-variable name="modo" sid="8493084450835016" type="string" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="Platform" sid="715279925114858">
+                        <behavior id="Platform" />
+                    </behavior-type>
+                    <behavior-type name="ScrollTo" sid="6070859429471191">
+                        <behavior id="scrollto" />
+                    </behavior-type>
+                    <behavior-type name="BoundToLayout" sid="6841260807179297">
+                        <behavior id="bound" />
+                    </behavior-type>
+                    <behavior-type name="Platform2" sid="5894808380166249">
+                        <behavior id="Platform" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="16" loop="1" name="Walk" pingpong="0" repeatcount="1" repeatto="0" sid="2893067752683642" speed="24">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501241" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Mocha_Walk\Mocha_Walk(22).png">
+                            <image-point name="Imagepoint 1" x="0.958621" y="0.369727" />
+                            <collision-poly>
+                                <point x="0.403448" y="0.290323" />
+                                <point x="0.5" y="0.0124069" />
+                                <point x="0.62069" y="0.0669975" />
+                                <point x="0.617242" y="0.598015" />
+                                <point x="0.755172" y="0.915633" />
+                                <point x="0.389655" y="0.952854" />
+                                <point x="0.172414" y="0.853598" />
+                                <point x="0.362069" y="0.55335" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Mocha_Walk\Mocha_Walk(23).png">
+                            <image-point name="Imagepoint 1" x="0.957265" y="0.369347" />
+                            <collision-poly>
+                                <point x="0.403448" y="0.290323" />
+                                <point x="0.5" y="0.0124069" />
+                                <point x="0.62069" y="0.0669975" />
+                                <point x="0.617242" y="0.598015" />
+                                <point x="0.755172" y="0.915633" />
+                                <point x="0.389655" y="0.952854" />
+                                <point x="0.172414" y="0.853598" />
+                                <point x="0.362069" y="0.55335" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Mocha_Walk\Mocha_Walk(24).png">
+                            <image-point name="Imagepoint 1" x="0.958716" y="0.368687" />
+                            <collision-poly>
+                                <point x="0.403448" y="0.290323" />
+                                <point x="0.5" y="0.0124069" />
+                                <point x="0.62069" y="0.0669975" />
+                                <point x="0.617242" y="0.598015" />
+                                <point x="0.755172" y="0.915633" />
+                                <point x="0.389655" y="0.952854" />
+                                <point x="0.172414" y="0.853598" />
+                                <point x="0.362069" y="0.55335" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Mocha_Walk\Mocha_Walk(25).png">
+                            <image-point name="Imagepoint 1" x="0.957547" y="0.36802" />
+                            <collision-poly>
+                                <point x="0.403448" y="0.290323" />
+                                <point x="0.5" y="0.0124069" />
+                                <point x="0.62069" y="0.0669975" />
+                                <point x="0.617242" y="0.598015" />
+                                <point x="0.755172" y="0.915633" />
+                                <point x="0.389655" y="0.952854" />
+                                <point x="0.172414" y="0.853598" />
+                                <point x="0.362069" y="0.55335" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501272" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Mocha_Walk\Mocha_Walk(26).png">
+                            <image-point name="Imagepoint 1" x="0.961538" y="0.368957" />
+                            <collision-poly>
+                                <point x="0.403448" y="0.290323" />
+                                <point x="0.5" y="0.0124069" />
+                                <point x="0.62069" y="0.0669975" />
+                                <point x="0.617242" y="0.598015" />
+                                <point x="0.755172" y="0.915633" />
+                                <point x="0.389655" y="0.952854" />
+                                <point x="0.172414" y="0.853598" />
+                                <point x="0.362069" y="0.55335" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Mocha_Walk\Mocha_Walk(27).png">
+                            <image-point name="Imagepoint 1" x="0.958904" y="0.368159" />
+                            <collision-poly>
+                                <point x="0.403448" y="0.290323" />
+                                <point x="0.5" y="0.0124069" />
+                                <point x="0.62069" y="0.0669975" />
+                                <point x="0.617242" y="0.598015" />
+                                <point x="0.755172" y="0.915633" />
+                                <point x="0.389655" y="0.952854" />
+                                <point x="0.172414" y="0.853598" />
+                                <point x="0.362069" y="0.55335" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501229" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Mocha_Walk\Mocha_Walk(28).png">
+                            <image-point name="Imagepoint 1" x="0.961039" y="0.36855" />
+                            <collision-poly>
+                                <point x="0.403448" y="0.290323" />
+                                <point x="0.5" y="0.0124069" />
+                                <point x="0.62069" y="0.0669975" />
+                                <point x="0.617242" y="0.598015" />
+                                <point x="0.755172" y="0.915633" />
+                                <point x="0.389655" y="0.952854" />
+                                <point x="0.172414" y="0.853598" />
+                                <point x="0.362069" y="0.55335" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501222" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Mocha_Walk\Mocha_Walk(29).png">
+                            <image-point name="Imagepoint 1" x="0.959091" y="0.369193" />
+                            <collision-poly>
+                                <point x="0.403448" y="0.290323" />
+                                <point x="0.5" y="0.0124069" />
+                                <point x="0.62069" y="0.0669975" />
+                                <point x="0.617242" y="0.598015" />
+                                <point x="0.755172" y="0.915633" />
+                                <point x="0.389655" y="0.952854" />
+                                <point x="0.172414" y="0.853598" />
+                                <point x="0.362069" y="0.55335" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.502439" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Mocha_Walk\Mocha_Walk(30).png">
+                            <image-point name="Imagepoint 1" x="0.959259" y="0.368293" />
+                            <collision-poly>
+                                <point x="0.403448" y="0.290323" />
+                                <point x="0.5" y="0.0124069" />
+                                <point x="0.62069" y="0.0669975" />
+                                <point x="0.617242" y="0.598015" />
+                                <point x="0.755172" y="0.915633" />
+                                <point x="0.389655" y="0.952854" />
+                                <point x="0.172414" y="0.853598" />
+                                <point x="0.362069" y="0.55335" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.501779" hotspotY="0.502451" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Mocha_Walk\Mocha_Walk(31).png">
+                            <image-point name="Imagepoint 1" x="0.957295" y="0.370098" />
+                            <collision-poly>
+                                <point x="0.403448" y="0.290323" />
+                                <point x="0.5" y="0.0124069" />
+                                <point x="0.62069" y="0.0669975" />
+                                <point x="0.617242" y="0.598015" />
+                                <point x="0.755172" y="0.915633" />
+                                <point x="0.389655" y="0.952854" />
+                                <point x="0.172414" y="0.853598" />
+                                <point x="0.362069" y="0.55335" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501235" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Mocha_Walk\Mocha_Walk(32).png">
+                            <image-point name="Imagepoint 1" x="0.959559" y="0.367901" />
+                            <collision-poly>
+                                <point x="0.403448" y="0.290323" />
+                                <point x="0.5" y="0.0124069" />
+                                <point x="0.62069" y="0.0669975" />
+                                <point x="0.617242" y="0.598015" />
+                                <point x="0.755172" y="0.915633" />
+                                <point x="0.389655" y="0.952854" />
+                                <point x="0.172414" y="0.853598" />
+                                <point x="0.362069" y="0.55335" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Mocha_Walk\Mocha_Walk(33).png">
+                            <image-point name="Imagepoint 1" x="0.958333" y="0.368159" />
+                            <collision-poly>
+                                <point x="0.403448" y="0.290323" />
+                                <point x="0.5" y="0.0124069" />
+                                <point x="0.62069" y="0.0669975" />
+                                <point x="0.617242" y="0.598015" />
+                                <point x="0.755172" y="0.915633" />
+                                <point x="0.389655" y="0.952854" />
+                                <point x="0.172414" y="0.853598" />
+                                <point x="0.362069" y="0.55335" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501229" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Mocha_Walk\Mocha_Walk(34).png">
+                            <image-point name="Imagepoint 1" x="0.956989" y="0.36855" />
+                            <collision-poly>
+                                <point x="0.403448" y="0.290323" />
+                                <point x="0.5" y="0.0124069" />
+                                <point x="0.62069" y="0.0669975" />
+                                <point x="0.617242" y="0.598015" />
+                                <point x="0.755172" y="0.915633" />
+                                <point x="0.389655" y="0.952854" />
+                                <point x="0.172414" y="0.853598" />
+                                <point x="0.362069" y="0.55335" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.502439" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Mocha_Walk\Mocha_Walk(35).png">
+                            <image-point name="Imagepoint 1" x="0.957447" y="0.368293" />
+                            <collision-poly>
+                                <point x="0.403448" y="0.290323" />
+                                <point x="0.5" y="0.0124069" />
+                                <point x="0.62069" y="0.0669975" />
+                                <point x="0.617242" y="0.598015" />
+                                <point x="0.755172" y="0.915633" />
+                                <point x="0.389655" y="0.952854" />
+                                <point x="0.172414" y="0.853598" />
+                                <point x="0.362069" y="0.55335" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.501992" hotspotY="0.501229" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Mocha_Walk\Mocha_Walk(36).png">
+                            <image-point name="Imagepoint 1" x="0.960159" y="0.36855" />
+                            <collision-poly>
+                                <point x="0.403448" y="0.290323" />
+                                <point x="0.5" y="0.0124069" />
+                                <point x="0.62069" y="0.0669975" />
+                                <point x="0.617242" y="0.598015" />
+                                <point x="0.755172" y="0.915633" />
+                                <point x="0.389655" y="0.952854" />
+                                <point x="0.172414" y="0.853598" />
+                                <point x="0.362069" y="0.55335" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.501832" hotspotY="0.501247" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Mocha_Walk\Mocha_Walk(37).png">
+                            <image-point name="Imagepoint 1" x="0.959707" y="0.369077" />
+                            <collision-poly>
+                                <point x="0.403448" y="0.290323" />
+                                <point x="0.5" y="0.0124069" />
+                                <point x="0.62069" y="0.0669975" />
+                                <point x="0.617242" y="0.598015" />
+                                <point x="0.755172" y="0.915633" />
+                                <point x="0.389655" y="0.952854" />
+                                <point x="0.172414" y="0.853598" />
+                                <point x="0.362069" y="0.55335" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="2" loop="1" name="Iddle" pingpong="0" repeatcount="1" repeatto="0" sid="403768394764108" speed="2">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501229" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Mocha_Walk\Mocha_Walk(28).png">
+                            <image-point name="Imagepoint 1" x="0.961039" y="0.36855" />
+                            <image-point name="Imagepoint 2" x="0.474026" y="0.938575" />
+                            <collision-poly>
+                                <point x="0.403448" y="0.290323" />
+                                <point x="0.5" y="0.0124069" />
+                                <point x="0.62069" y="0.0669975" />
+                                <point x="0.617242" y="0.598015" />
+                                <point x="0.755172" y="0.915633" />
+                                <point x="0.389655" y="0.952854" />
+                                <point x="0.172414" y="0.853598" />
+                                <point x="0.362069" y="0.55335" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <image-point name="Imagepoint 1" x="0.958904" y="0.368159" />
+                            <collision-poly>
+                                <point x="0.403448" y="0.290323" />
+                                <point x="0.5" y="0.0124069" />
+                                <point x="0.62069" y="0.0669975" />
+                                <point x="0.617242" y="0.598015" />
+                                <point x="0.755172" y="0.915633" />
+                                <point x="0.389655" y="0.952854" />
+                                <point x="0.172414" y="0.853598" />
+                                <point x="0.362069" y="0.55335" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="1" name="Lanterna" pingpong="0" repeatcount="1" repeatto="0" sid="991814654501828" speed="10">
+                        <frame duration="1" hotspotX="0.502128" hotspotY="0.502451" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Mocha_WalkLight\Mocha_WalkLight(14).png">
+                            <image-point name="Imagepoint 1" x="0.957447" y="0.370098" />
+                            <collision-poly>
+                                <point x="0.403448" y="0.290323" />
+                                <point x="0.5" y="0.0124069" />
+                                <point x="0.62069" y="0.0669975" />
+                                <point x="0.617242" y="0.598015" />
+                                <point x="0.755172" y="0.915633" />
+                                <point x="0.389655" y="0.952854" />
+                                <point x="0.172414" y="0.853598" />
+                                <point x="0.362069" y="0.55335" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="17" loop="1" name="WalkLanterna" pingpong="0" repeatcount="1" repeatto="0" sid="6622250563450006" speed="10">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501247" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Mocha_WalkLight\Mocha_WalkLight(8).png">
+                            <image-point name="Imagepoint 1" x="0.958904" y="0.369077" />
+                            <collision-poly>
+                                <point x="0.403448" y="0.290323" />
+                                <point x="0.5" y="0.0124069" />
+                                <point x="0.62069" y="0.0669975" />
+                                <point x="0.617242" y="0.598015" />
+                                <point x="0.755172" y="0.915633" />
+                                <point x="0.389655" y="0.952854" />
+                                <point x="0.172414" y="0.853598" />
+                                <point x="0.362069" y="0.55335" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.501818" hotspotY="0.501259" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Mocha_WalkLight\Mocha_WalkLight(9).png">
+                            <image-point name="Imagepoint 1" x="0.96" y="0.370277" />
+                            <collision-poly>
+                                <point x="0.403448" y="0.290323" />
+                                <point x="0.5" y="0.0124069" />
+                                <point x="0.62069" y="0.0669975" />
+                                <point x="0.617242" y="0.598015" />
+                                <point x="0.755172" y="0.915633" />
+                                <point x="0.389655" y="0.952854" />
+                                <point x="0.172414" y="0.853598" />
+                                <point x="0.362069" y="0.55335" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.501792" hotspotY="0.501266" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Mocha_WalkLight\Mocha_WalkLight(10).png">
+                            <image-point name="Imagepoint 1" x="0.960573" y="0.36962" />
+                            <collision-poly>
+                                <point x="0.403448" y="0.290323" />
+                                <point x="0.5" y="0.0124069" />
+                                <point x="0.62069" y="0.0669975" />
+                                <point x="0.617242" y="0.598015" />
+                                <point x="0.755172" y="0.915633" />
+                                <point x="0.389655" y="0.952854" />
+                                <point x="0.172414" y="0.853598" />
+                                <point x="0.362069" y="0.55335" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Mocha_WalkLight\Mocha_WalkLight(11).png">
+                            <image-point name="Imagepoint 1" x="0.960145" y="0.369898" />
+                            <collision-poly>
+                                <point x="0.403448" y="0.290323" />
+                                <point x="0.5" y="0.0124069" />
+                                <point x="0.62069" y="0.0669975" />
+                                <point x="0.617242" y="0.598015" />
+                                <point x="0.755172" y="0.915633" />
+                                <point x="0.389655" y="0.952854" />
+                                <point x="0.172414" y="0.853598" />
+                                <point x="0.362069" y="0.55335" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Mocha_WalkLight\Mocha_WalkLight(12).png">
+                            <image-point name="Imagepoint 1" x="0.957692" y="0.368687" />
+                            <collision-poly>
+                                <point x="0.403448" y="0.290323" />
+                                <point x="0.5" y="0.0124069" />
+                                <point x="0.62069" y="0.0669975" />
+                                <point x="0.617242" y="0.598015" />
+                                <point x="0.755172" y="0.915633" />
+                                <point x="0.389655" y="0.952854" />
+                                <point x="0.172414" y="0.853598" />
+                                <point x="0.362069" y="0.55335" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.502242" hotspotY="0.5" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Mocha_WalkLight\Mocha_WalkLight(13).png">
+                            <image-point name="Imagepoint 1" x="0.959641" y="0.368159" />
+                            <collision-poly>
+                                <point x="0.403448" y="0.290323" />
+                                <point x="0.5" y="0.0124069" />
+                                <point x="0.62069" y="0.0669975" />
+                                <point x="0.617242" y="0.598015" />
+                                <point x="0.755172" y="0.915633" />
+                                <point x="0.389655" y="0.952854" />
+                                <point x="0.172414" y="0.853598" />
+                                <point x="0.362069" y="0.55335" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.502128" hotspotY="0.502451" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Mocha_WalkLight\Mocha_WalkLight(14).png">
+                            <image-point name="Imagepoint 1" x="0.957447" y="0.370098" />
+                            <collision-poly>
+                                <point x="0.403448" y="0.290323" />
+                                <point x="0.5" y="0.0124069" />
+                                <point x="0.62069" y="0.0669975" />
+                                <point x="0.617242" y="0.598015" />
+                                <point x="0.755172" y="0.915633" />
+                                <point x="0.389655" y="0.952854" />
+                                <point x="0.172414" y="0.853598" />
+                                <point x="0.362069" y="0.55335" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.502439" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Mocha_WalkLight\Mocha_WalkLight(15).png">
+                            <image-point name="Imagepoint 1" x="0.959559" y="0.368293" />
+                            <collision-poly>
+                                <point x="0.403448" y="0.290323" />
+                                <point x="0.5" y="0.0124069" />
+                                <point x="0.62069" y="0.0669975" />
+                                <point x="0.617242" y="0.598015" />
+                                <point x="0.755172" y="0.915633" />
+                                <point x="0.389655" y="0.952854" />
+                                <point x="0.172414" y="0.853598" />
+                                <point x="0.362069" y="0.55335" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.502439" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Mocha_WalkLight\Mocha_WalkLight(16).png">
+                            <image-point name="Imagepoint 1" x="0.958333" y="0.368293" />
+                            <collision-poly>
+                                <point x="0.403448" y="0.290323" />
+                                <point x="0.5" y="0.0124069" />
+                                <point x="0.62069" y="0.0669975" />
+                                <point x="0.617242" y="0.598015" />
+                                <point x="0.755172" y="0.915633" />
+                                <point x="0.389655" y="0.952854" />
+                                <point x="0.172414" y="0.853598" />
+                                <point x="0.362069" y="0.55335" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.501672" hotspotY="0.501229" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Mocha_WalkLight\Mocha_WalkLight(17).png">
+                            <image-point name="Imagepoint 1" x="0.959866" y="0.36855" />
+                            <collision-poly>
+                                <point x="0.403448" y="0.290323" />
+                                <point x="0.5" y="0.0124069" />
+                                <point x="0.62069" y="0.0669975" />
+                                <point x="0.617242" y="0.598015" />
+                                <point x="0.755172" y="0.915633" />
+                                <point x="0.389655" y="0.952854" />
+                                <point x="0.172414" y="0.853598" />
+                                <point x="0.362069" y="0.55335" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.502475" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Mocha_WalkLight\Mocha_WalkLight(18).png">
+                            <image-point name="Imagepoint 1" x="0.96" y="0.368812" />
+                            <collision-poly>
+                                <point x="0.403448" y="0.290323" />
+                                <point x="0.5" y="0.0124069" />
+                                <point x="0.62069" y="0.0669975" />
+                                <point x="0.617242" y="0.598015" />
+                                <point x="0.755172" y="0.915633" />
+                                <point x="0.389655" y="0.952854" />
+                                <point x="0.172414" y="0.853598" />
+                                <point x="0.362069" y="0.55335" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.501706" hotspotY="0.501247" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Mocha_WalkLight\Mocha_WalkLight(19).png">
+                            <image-point name="Imagepoint 1" x="0.959044" y="0.369077" />
+                            <collision-poly>
+                                <point x="0.403448" y="0.290323" />
+                                <point x="0.5" y="0.0124069" />
+                                <point x="0.62069" y="0.0669975" />
+                                <point x="0.617242" y="0.598015" />
+                                <point x="0.755172" y="0.915633" />
+                                <point x="0.389655" y="0.952854" />
+                                <point x="0.172414" y="0.853598" />
+                                <point x="0.362069" y="0.55335" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.501832" hotspotY="0.501229" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Mocha_WalkLight\Mocha_WalkLight(20).png">
+                            <image-point name="Imagepoint 1" x="0.959707" y="0.36855" />
+                            <collision-poly>
+                                <point x="0.403448" y="0.290323" />
+                                <point x="0.5" y="0.0124069" />
+                                <point x="0.62069" y="0.0669975" />
+                                <point x="0.617242" y="0.598015" />
+                                <point x="0.755172" y="0.915633" />
+                                <point x="0.389655" y="0.952854" />
+                                <point x="0.172414" y="0.853598" />
+                                <point x="0.362069" y="0.55335" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.502439" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Mocha_WalkLight\Mocha_WalkLight(21).png">
+                            <image-point name="Imagepoint 1" x="0.958678" y="0.368293" />
+                            <collision-poly>
+                                <point x="0.403448" y="0.290323" />
+                                <point x="0.5" y="0.0124069" />
+                                <point x="0.62069" y="0.0669975" />
+                                <point x="0.617242" y="0.598015" />
+                                <point x="0.755172" y="0.915633" />
+                                <point x="0.389655" y="0.952854" />
+                                <point x="0.172414" y="0.853598" />
+                                <point x="0.362069" y="0.55335" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501222" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Mocha_WalkLight\Mocha_WalkLight(22).png">
+                            <image-point name="Imagepoint 1" x="0.959559" y="0.369193" />
+                            <collision-poly>
+                                <point x="0.403448" y="0.290323" />
+                                <point x="0.5" y="0.0124069" />
+                                <point x="0.62069" y="0.0669975" />
+                                <point x="0.617242" y="0.598015" />
+                                <point x="0.755172" y="0.915633" />
+                                <point x="0.389655" y="0.952854" />
+                                <point x="0.172414" y="0.853598" />
+                                <point x="0.362069" y="0.55335" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.502475" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Mocha_WalkLight\Mocha_WalkLight(23).png">
+                            <image-point name="Imagepoint 1" x="0.960265" y="0.368812" />
+                            <collision-poly>
+                                <point x="0.403448" y="0.290323" />
+                                <point x="0.5" y="0.0124069" />
+                                <point x="0.62069" y="0.0669975" />
+                                <point x="0.617242" y="0.598015" />
+                                <point x="0.755172" y="0.915633" />
+                                <point x="0.389655" y="0.952854" />
+                                <point x="0.172414" y="0.853598" />
+                                <point x="0.362069" y="0.55335" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.501779" hotspotY="0.5" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Mocha_WalkLight\Mocha_WalkLight(24).png">
+                            <image-point name="Imagepoint 1" x="0.957295" y="0.37" />
+                            <collision-poly>
+                                <point x="0.403448" y="0.290323" />
+                                <point x="0.5" y="0.0124069" />
+                                <point x="0.62069" y="0.0669975" />
+                                <point x="0.617242" y="0.598015" />
+                                <point x="0.755172" y="0.915633" />
+                                <point x="0.389655" y="0.952854" />
+                                <point x="0.172414" y="0.853598" />
+                                <point x="0.362069" y="0.55335" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="17" loop="1" name="Abaixado" pingpong="0" repeatcount="1" repeatto="0" sid="4890973307063923" speed="24">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.502347" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Mocha_Crawl\Mocha_Crawl(7).png" />
+                        <frame duration="1" hotspotX="0.501341" hotspotY="0.5" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Mocha_Crawl\Mocha_Crawl(8).png" />
+                        <frame duration="1" hotspotX="0.501319" hotspotY="0.502242" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Mocha_Crawl\Mocha_Crawl(9).png" />
+                        <frame duration="1" hotspotX="0.501247" hotspotY="0.5" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Mocha_Crawl\Mocha_Crawl(10).png" />
+                        <frame duration="1" hotspotX="0.501199" hotspotY="0.502183" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Mocha_Crawl\Mocha_Crawl(11).png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.502222" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Mocha_Crawl\Mocha_Crawl(12).png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Mocha_Crawl\Mocha_Crawl(13).png" />
+                        <frame duration="1" hotspotX="0.501211" hotspotY="0.502283" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Mocha_Crawl\Mocha_Crawl(14).png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.502326" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Mocha_Crawl\Mocha_Crawl(15).png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Mocha_Crawl\Mocha_Crawl(16).png" />
+                        <frame duration="1" hotspotX="0.501235" hotspotY="0.50237" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Mocha_Crawl\Mocha_Crawl(17).png" />
+                        <frame duration="1" hotspotX="0.501205" hotspotY="0.5" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Mocha_Crawl\Mocha_Crawl(18).png" />
+                        <frame duration="1" hotspotX="0.501193" hotspotY="0.502415" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Mocha_Crawl\Mocha_Crawl(19).png" />
+                        <frame duration="1" hotspotX="0.501211" hotspotY="0.5" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Mocha_Crawl\Mocha_Crawl(20).png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Mocha_Crawl\Mocha_Crawl(21).png" />
+                        <frame duration="1" hotspotX="0.501285" hotspotY="0.50237" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Mocha_Crawl\Mocha_Crawl(22).png" />
+                        <frame duration="1" hotspotX="0.501326" hotspotY="0.5" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Mocha_Crawl\Mocha_Crawl(23).png" />
+                    </animation>
+                    <animation framecount="6" loop="0" name="Abaixa" pingpong="0" repeatcount="1" repeatto="0" sid="5791383829785738" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501241" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Mocha_PickUp\Mocha_PickUp(8).png" />
+                        <frame duration="1" hotspotX="0.502304" hotspotY="0.501285" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Mocha_PickUp\Mocha_PickUp(9).png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501377" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Mocha_PickUp\Mocha_PickUp(10).png" />
+                        <frame duration="1" hotspotX="0.501845" hotspotY="0.501502" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Mocha_PickUp\Mocha_PickUp(11).png" />
+                        <frame duration="1" hotspotX="0.501639" hotspotY="0.5" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Mocha_PickUp\Mocha_PickUp(12).png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501672" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Mocha_PickUp\Mocha_PickUp(13).png" />
+                    </animation>
+                    <animation framecount="6" loop="0" name="Levantar" pingpong="0" repeatcount="1" repeatto="0" sid="6088086169884443" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501672" />
+                        <frame duration="1" hotspotX="0.501639" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.501845" hotspotY="0.501502" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501377" />
+                        <frame duration="1" hotspotX="0.502304" hotspotY="0.501285" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501241" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Pai" sid="6259310684896626">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="2508474026405616">
+                        <behavior id="solid" />
+                    </behavior-type>
+                    <behavior-type name="Pin" sid="4300562553258731">
+                        <behavior id="Pin" />
+                    </behavior-type>
+                    <behavior-type name="BoundToLayout" sid="4351085991692809">
+                        <behavior id="bound" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3738542579575513" speed="5">
+                        <frame duration="1" hotspotX="0.534706" hotspotY="0.363636" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\ArquivosSAI\paidascriançascharadesigndeotado.png">
+                            <collision-poly>
+                                <point x="0.0778032" y="0.113636" />
+                                <point x="0.534706" y="0.191919" />
+                                <point x="0.681159" y="0.121212" />
+                                <point x="0.961098" y="0.484848" />
+                                <point x="0.975591" y="0.954545" />
+                                <point x="0.057971" y="0.911616" />
+                                <point x="0.00305111" y="0.363636" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="HUD">
+            <object-type name="Play_Text" sid="4579777479023064">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="Text" sid="1952988088687103">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="Reload" sid="6702618017304495">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="reloadAviso" sid="1326292578030408">
+                <plugin id="Text" />
+            </object-type>
+        </object-folder>
+        <object-folder name="Sistemas">
+            <object-type name="piso" sid="1531037513710374">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="4116918564567972">
+                        <behavior id="solid" />
+                    </behavior-type>
+                    <behavior-type name="Physics" sid="9853850464326003">
+                        <behavior id="Physics" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3647576922934806" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="MarcaTronco" sid="561353401914538">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3591992553254301" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Block" sid="2167644634017656">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="860813043473357">
+                        <behavior id="solid" />
+                    </behavior-type>
+                    <behavior-type name="Physics" sid="232035124742184">
+                        <behavior id="Physics" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3941692943137007" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Vitoria" sid="6647572231403374">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable comment="Cena a ir" name="Layout" sid="799666791805825" type="string" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9040852973093043" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="GameOver" sid="3343728965822322">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1654554133947551" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Lanterna" sid="3541708751109563">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3452170152236301" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.502128" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Img_Originais\lanterna.png">
+                            <collision-poly>
+                                <point x="0.320513" y="0.331915" />
+                                <point x="0.683761" y="0.344681" />
+                                <point x="0.747863" y="0.502128" />
+                                <point x="0.683761" y="0.676596" />
+                                <point x="0.311966" y="0.680851" />
+                                <point x="0.247863" y="0.502128" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="EspinhosTrigger" sid="7700216235100817">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4744091470887569" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="TitleView" sid="6973841737356722">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="bandeira" sid="4478301832842279" type="boolean" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="ScrollTo" sid="5314747653260428">
+                        <behavior id="scrollto" />
+                    </behavior-type>
+                    <behavior-type name="Persist" sid="5164812567636857">
+                        <behavior id="Persist" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6535162990148371" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Peiso" sid="8706199843276895">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="8207837474531527">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4619542216880371" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Presenca" sid="2817758695486441">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3257405753656986" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Interactive Objects">
+            <object-type name="Arcore" sid="6556855685066477">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Physics" sid="628867075880222">
+                        <behavior id="Physics" />
+                    </behavior-type>
+                    <behavior-type name="Solid" sid="4853631226846599">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9748638132096273" speed="5">
+                        <frame duration="1" hotspotX="0.506494" hotspotY="0.502326" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\arvoresv1 (2).png">
+                            <collision-poly>
+                                <point x="0.116883" y="0.0418605" />
+                                <point x="0.493506" y="0.0790698" />
+                                <point x="0.727273" y="0.139535" />
+                                <point x="0.961039" y="0.497674" />
+                                <point x="0.818182" y="0.934884" />
+                                <point x="0.493506" y="0.944186" />
+                                <point x="0.168831" y="0.939535" />
+                                <point x="0.38961" y="0.497674" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Espinhos" sid="4806112075568065">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="329876660913636" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Img_Originais\dentesassetmovel.png">
+                            <collision-poly>
+                                <point x="0.170732" y="0.0648148" />
+                                <point x="0.5" y="0.0138889" />
+                                <point x="0.804878" y="0.0740741" />
+                                <point x="0.792683" y="0.5" />
+                                <point x="0.609756" y="0.851852" />
+                                <point x="0.5" y="0.99537" />
+                                <point x="0.304878" y="0.884259" />
+                                <point x="0.0365854" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Espinhos2" sid="2033932939574219">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9478091990902218" speed="5">
+                        <frame duration="1" hotspotX="0.507042" hotspotY="0.5" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Img_Originais\dentesassetmovel.png">
+                            <collision-poly>
+                                <point x="0.183099" y="0.0619048" />
+                                <point x="0.492958" y="0.0047619" />
+                                <point x="0.859155" y="0.047619" />
+                                <point x="0.71831" y="0.5" />
+                                <point x="0.577465" y="0.857143" />
+                                <point x="0.492958" y="0.990476" />
+                                <point x="0.352113" y="0.880952" />
+                                <point x="0.056338" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Espinhos3" sid="4727019555667099">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="762218474829551" speed="5">
+                        <frame duration="1" hotspotX="0.507246" hotspotY="0.5" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Img_Originais\dentesassetmovel.png">
+                            <collision-poly>
+                                <point x="0.15942" y="0.052381" />
+                                <point x="0.492754" y="0.0047619" />
+                                <point x="0.811594" y="0.0619048" />
+                                <point x="0.884058" y="0.5" />
+                                <point x="0.623188" y="0.87619" />
+                                <point x="0.492754" y="0.966667" />
+                                <point x="0.391304" y="0.871429" />
+                                <point x="0.115942" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Espinhos4" sid="9182192504074526">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8960504713344291" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Img_Originais\dentesassetmovel.png">
+                            <collision-poly>
+                                <point x="0.175" y="0.0714286" />
+                                <point x="0.5" y="0.00510204" />
+                                <point x="0.8" y="0.0816327" />
+                                <point x="0.775" y="0.5" />
+                                <point x="0.4625" y="0.979592" />
+                                <point x="0.2875" y="0.882653" />
+                                <point x="0.05" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Elevador" sid="9208310962558508">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="posicao" sid="4815074023527349" type="string" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="Solid" sid="8905833111981517">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1047904787245185" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\ArquivosSAI\elevador.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="botao_elevador" sid="7678356862580855">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="585787600835536" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="escada" sid="6623270353089411">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7749606425698579" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Arcore2" sid="8384407823150168">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Physics" sid="7892544180682045">
+                        <behavior id="Physics" />
+                    </behavior-type>
+                    <behavior-type name="Solid" sid="1598863870180644">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="173519235899146" speed="5">
+                        <frame duration="1" hotspotX="0.493506" hotspotY="0.427807" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\arvoresv1 (2).png">
+                            <collision-poly>
+                                <point x="0.61039" y="0.422459" />
+                                <point x="1" y="0.970589" />
+                                <point x="0.662338" y="0.962567" />
+                                <point x="0.181818" y="0.925134" />
+                                <point x="0.038961" y="0.422459" />
+                                <point x="0.220779" y="0.187166" />
+                                <point x="0.487013" y="0.0828877" />
+                                <point x="0.74026" y="0.0213904" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Ponte" sid="4984648395460773">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="8505852122419232">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8616349608714749" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Chave" sid="8533736409175955">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Persist" sid="3296543637818164">
+                        <behavior id="Persist" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8964428716519004" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\ArquivosSAI\chave.png">
+                            <collision-poly>
+                                <point x="0.234375" y="0.234375" />
+                                <point x="0.5" y="0.015625" />
+                                <point x="0.75" y="0.25" />
+                                <point x="0.671875" y="0.5" />
+                                <point x="0.671875" y="0.671875" />
+                                <point x="0.5" y="1" />
+                                <point x="0.34375" y="0.65625" />
+                                <point x="0.375" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Portao" sid="5677050497382629">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="119038834217793">
+                        <behavior id="solid" />
+                    </behavior-type>
+                    <behavior-type name="Persist" sid="2117829697459035">
+                        <behavior id="Persist" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Fechado" pingpong="0" repeatcount="1" repeatto="0" sid="3252055183378671" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="1" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="Aberto" pingpong="0" repeatcount="1" repeatto="0" sid="4983466446833877" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="1" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="PonteFerro" sid="8977931506309389">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="ativo" sid="4521302241650795" type="boolean" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="Solid" sid="4877731281670335">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7892472169355443" speed="5">
+                        <frame duration="1" hotspotX="0.497925" hotspotY="0.640719" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\ArquivosSAI\ponte.png">
+                            <collision-poly>
+                                <point x="0" y="0.200599" />
+                                <point x="1" y="0.176647" />
+                                <point x="1" y="0.616766" />
+                                <point x="0.911203" y="0.607784" />
+                                <point x="0.909544" y="0.967066" />
+                                <point x="0.0946058" y="0.994012" />
+                                <point x="0.0879668" y="0.628743" />
+                                <point x="0" y="0.61976" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Carro" sid="1192738249727615">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="ativo" sid="5153663039341069" type="boolean" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="ScrollTo" sid="3808784315937013">
+                        <behavior id="scrollto" />
+                    </behavior-type>
+                    <behavior-type name="Solid" sid="119553367855458">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4695544557215523" speed="24">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.970213" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Car_Move\Carro_Move(1).png" />
+                    </animation>
+                    <animation framecount="23" loop="1" name="Walk" pingpong="0" repeatcount="1" repeatto="0" sid="5580365285367111" speed="24">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.970213" />
+                        <frame duration="1" hotspotX="0.500734" hotspotY="0.969828" />
+                        <frame duration="1" hotspotX="0.500734" hotspotY="0.969697" />
+                        <frame duration="1" hotspotX="0.500734" hotspotY="0.969697" />
+                        <frame duration="1" hotspotX="0.500734" hotspotY="0.969828" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.970085" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.970213" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.970339" />
+                        <frame duration="1" hotspotX="0.500734" hotspotY="0.970464" />
+                        <frame duration="1" hotspotX="0.500734" hotspotY="0.970464" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.970464" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.970213" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.970085" />
+                        <frame duration="1" hotspotX="0.500734" hotspotY="0.969828" />
+                        <frame duration="1" hotspotX="0.500734" hotspotY="0.969697" />
+                        <frame duration="1" hotspotX="0.500734" hotspotY="0.969697" />
+                        <frame duration="1" hotspotX="0.500734" hotspotY="0.969828" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.970085" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.970213" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.970339" />
+                        <frame duration="1" hotspotX="0.500734" hotspotY="0.970464" />
+                        <frame duration="1" hotspotX="0.500734" hotspotY="0.970464" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.970464" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Titulo">
+            <object-type name="TitleOperation" sid="7637037358978613">
+                <plugin id="Text" />
+                <instance-variables>
+                    <instance-variable name="op" sid="7622270877391596" type="string" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="Fade" sid="6300413598650271">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
+            </object-type>
+            <object-type name="btn_marca" sid="857062822988914">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="op" sid="9318350399457412" type="string" />
+                    <instance-variable name="over" sid="9212826281264915" type="boolean" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="Solid" sid="8785907702645644">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6207647964954545" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Titulo" sid="479479028463088">
+                <plugin id="Text" />
+                <behaviors>
+                    <behavior-type name="Fade" sid="9094973125876157">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                    <behavior-type name="Sine" sid="1322580518251547">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
+            </object-type>
+        </object-folder>
+        <object-folder name="Monsters">
+            <object-type name="Monster1" sid="7822485888940598">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="Brilho" sid="6787161213344638" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="Fade" sid="3094984655251111">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                    <behavior-type name="Persist" sid="6369133114593437">
+                        <behavior id="Persist" />
+                    </behavior-type>
+                </behaviors>
+                <effects>
+                    <effect-type name="Water">
+                        <effect id="water" />
+                    </effect-type>
+                </effects>
+                <animation-folder>
+                    <animation framecount="48" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2055017878965721" speed="24">
+                        <frame duration="1" hotspotX="0.500855" hotspotY="0.50193" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Monster1_Scratch\Monster1_Scratch(17).png" />
+                        <frame duration="1" hotspotX="0.500852" hotspotY="0.50193" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Monster1_Scratch\Monster1_Scratch(18).png" />
+                        <frame duration="1" hotspotX="0.500846" hotspotY="0.50193" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Monster1_Scratch\Monster1_Scratch(19) (1).png" />
+                        <frame duration="1" hotspotX="0.500846" hotspotY="0.50193" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Monster1_Scratch\Monster1_Scratch(19).png" />
+                        <frame duration="1" hotspotX="0.500843" hotspotY="0.50193" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Monster1_Scratch\Monster1_Scratch(20) (1).png" />
+                        <frame duration="1" hotspotX="0.500843" hotspotY="0.50193" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Monster1_Scratch\Monster1_Scratch(20).png" />
+                        <frame duration="1" hotspotX="0.500838" hotspotY="0.50193" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Monster1_Scratch\Monster1_Scratch(21) (1).png" />
+                        <frame duration="1" hotspotX="0.500838" hotspotY="0.50193" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Monster1_Scratch\Monster1_Scratch(21).png" />
+                        <frame duration="1" hotspotX="0.500832" hotspotY="0.50193" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Monster1_Scratch\Monster1_Scratch(22) (1).png" />
+                        <frame duration="1" hotspotX="0.500832" hotspotY="0.50193" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Monster1_Scratch\Monster1_Scratch(22).png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501945" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Monster1_Scratch\Monster1_Scratch(23) (1).png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501945" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Monster1_Scratch\Monster1_Scratch(23).png" />
+                        <frame duration="1" hotspotX="0.500826" hotspotY="0.501945" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Monster1_Scratch\Monster1_Scratch(24) (1).png" />
+                        <frame duration="1" hotspotX="0.500826" hotspotY="0.501945" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Monster1_Scratch\Monster1_Scratch(24).png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501945" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Monster1_Scratch\Monster1_Scratch(25) (1).png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501945" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Monster1_Scratch\Monster1_Scratch(25).png" />
+                        <frame duration="1" hotspotX="0.500818" hotspotY="0.501945" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Monster1_Scratch\Monster1_Scratch(26) (1).png" />
+                        <frame duration="1" hotspotX="0.500818" hotspotY="0.501945" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Monster1_Scratch\Monster1_Scratch(26).png" />
+                        <frame duration="1" hotspotX="0.500816" hotspotY="0.501945" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Monster1_Scratch\Monster1_Scratch(27) (1).png" />
+                        <frame duration="1" hotspotX="0.500816" hotspotY="0.501945" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Monster1_Scratch\Monster1_Scratch(27).png" />
+                        <frame duration="1" hotspotX="0.500813" hotspotY="0.501945" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Monster1_Scratch\Monster1_Scratch(28) (1).png" />
+                        <frame duration="1" hotspotX="0.500813" hotspotY="0.501945" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Monster1_Scratch\Monster1_Scratch(28).png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501945" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Monster1_Scratch\Monster1_Scratch(29) (1).png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501945" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Monster1_Scratch\Monster1_Scratch(29).png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501945" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Monster1_Scratch\Monster1_Scratch(30) (1).png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501945" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Monster1_Scratch\Monster1_Scratch(30).png" />
+                        <frame duration="1" hotspotX="0.500813" hotspotY="0.501945" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Monster1_Scratch\Monster1_Scratch(31) (1).png" />
+                        <frame duration="1" hotspotX="0.500813" hotspotY="0.501945" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Monster1_Scratch\Monster1_Scratch(31).png" />
+                        <frame duration="1" hotspotX="0.500816" hotspotY="0.501945" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Monster1_Scratch\Monster1_Scratch(32) (1).png" />
+                        <frame duration="1" hotspotX="0.500816" hotspotY="0.501945" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Monster1_Scratch\Monster1_Scratch(32).png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501945" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Monster1_Scratch\Monster1_Scratch(33) (1).png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501945" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Monster1_Scratch\Monster1_Scratch(33).png" />
+                        <frame duration="1" hotspotX="0.500824" hotspotY="0.501945" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Monster1_Scratch\Monster1_Scratch(34) (1).png" />
+                        <frame duration="1" hotspotX="0.500824" hotspotY="0.501945" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Monster1_Scratch\Monster1_Scratch(34).png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501945" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Monster1_Scratch\Monster1_Scratch(35) (1).png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501945" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Monster1_Scratch\Monster1_Scratch(35).png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501945" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Monster1_Scratch\Monster1_Scratch(36) (1).png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501945" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Monster1_Scratch\Monster1_Scratch(36).png" />
+                        <frame duration="1" hotspotX="0.500835" hotspotY="0.50193" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Monster1_Scratch\Monster1_Scratch(37) (1).png" />
+                        <frame duration="1" hotspotX="0.500835" hotspotY="0.50193" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Monster1_Scratch\Monster1_Scratch(37).png" />
+                        <frame duration="1" hotspotX="0.50084" hotspotY="0.50193" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Monster1_Scratch\Monster1_Scratch(38) (1).png" />
+                        <frame duration="1" hotspotX="0.50084" hotspotY="0.50193" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Monster1_Scratch\Monster1_Scratch(38).png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.50193" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Monster1_Scratch\Monster1_Scratch(39) (1).png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.50193" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Monster1_Scratch\Monster1_Scratch(39).png" />
+                        <frame duration="1" hotspotX="0.500849" hotspotY="0.50193" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Monster1_Scratch\Monster1_Scratch(40) (1).png" />
+                        <frame duration="1" hotspotX="0.500849" hotspotY="0.50193" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Monster1_Scratch\Monster1_Scratch(40).png" />
+                        <frame duration="1" hotspotX="0.500855" hotspotY="0.50193" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Monster1_Scratch\Monster1_Scratch(41) (1).png" />
+                        <frame duration="1" hotspotX="0.500855" hotspotY="0.50193" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Monster1_Scratch\Monster1_Scratch(41).png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Monstro2" sid="8978481144508548">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Fade" sid="9652302831908558">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="17" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7380976708148774" speed="24">
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Monster2_Roar\Monster2_Roar(9).png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Monster2_Roar\Monster2_Roar(10).png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Monster2_Roar\Monster2_Roar(11).png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Monster2_Roar\Monster2_Roar(12).png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Monster2_Roar\Monster2_Roar(13).png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Monster2_Roar\Monster2_Roar(14).png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Monster2_Roar\Monster2_Roar(15).png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Monster2_Roar\Monster2_Roar(16).png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Monster2_Roar\Monster2_Roar(17).png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Monster2_Roar\Monster2_Roar(18).png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Monster2_Roar\Monster2_Roar(19).png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Monster2_Roar\Monster2_Roar(20).png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Monster2_Roar\Monster2_Roar(21).png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Monster2_Roar\Monster2_Roar(22).png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Monster2_Roar\Monster2_Roar(23).png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Monster2_Roar\Monster2_Roar(24).png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Bateria\Google Drive\JAM\GGJ2015\Animações\Monster2_Roar\Monster2_Roar(25).png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+    </object-folder>
+    <families>
+        <family name="Personagens" plugin-id="Sprite" sid="6649856311657188">
+            <members>
+                <member>Pai</member>
+                <member>Player</member>
+                <member>Player2</member>
+            </members>
+        </family>
+        <family name="EstruturasDungeon" plugin-id="Sprite" sid="6140327949943349">
+            <members>
+                <member>Espinhos</member>
+                <member>Espinhos2</member>
+                <member>Espinhos3</member>
+                <member>Espinhos4</member>
+            </members>
+            <instance-variables>
+                <instance-variable name="order" sid="1246094962766363" type="number" />
+                <instance-variable name="ativo" sid="7807166815554261" type="boolean" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="DestroyOutsideLayout" sid="7597287347037093">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+        </family>
+        <family name="Monstros" plugin-id="Sprite" sid="4877654376625128">
+            <members>
+                <member>Monster1</member>
+                <member>Monstro2</member>
+            </members>
+        </family>
+    </families>
+    <layout-folder>
+        <layout>Cena1.xml</layout>
+        <layout>Cena2.xml</layout>
+        <layout>Cena3.xml</layout>
+        <layout>Cena4.xml</layout>
+        <layout>MENU.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Controles e regras.xml</event-sheet>
+        <event-sheet>Click_Button.xml</event-sheet>
+        <event-sheet>Cena1.xml</event-sheet>
+        <event-sheet>Cena2.xml</event-sheet>
+        <event-sheet>Cena3.xml</event-sheet>
+        <event-sheet>Cena4.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="12" />
+        <global-instance type="Mouse" uid="31" />
+        <global-instance type="Browser" uid="209" />
+        <global-instance type="Audio" uid="56">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+                <speed-of-sound>5000</speed-of-sound>
+                <doppler-factor>1</doppler-factor>
+            </properties>
+        </global-instance>
+    </global-instances>
+    <sounds-folder>
+        <file name="1 mover menu.m4a" />
+        <file name="1 mover menu.ogg" />
+        <file name="10 monstro.m4a" />
+        <file name="10 monstro.ogg" />
+        <file name="11 vento fora da casa.m4a" />
+        <file name="11 vento fora da casa.ogg" />
+        <file name="12 arrastando pai.m4a" />
+        <file name="12 arrastando pai.ogg" />
+        <file name="13 uivo.m4a" />
+        <file name="13 uivo.ogg" />
+        <file name="14 cachorro bravo.m4a" />
+        <file name="14 cachorro bravo.ogg" />
+        <file name="15 andando na floresta.m4a" />
+        <file name="15 andando na floresta.ogg" />
+        <file name="16 vento floresta.m4a" />
+        <file name="16 vento floresta.ogg" />
+        <file name="17 grilo floresta.m4a" />
+        <file name="17 grilo floresta.ogg" />
+        <file name="18 ambiente caverna.m4a" />
+        <file name="18 ambiente caverna.ogg" />
+        <file name="19 andando caverna.m4a" />
+        <file name="19 andando caverna.ogg" />
+        <file name="2 selecionar menu.m4a" />
+        <file name="2 selecionar menu.ogg" />
+        <file name="20 botão elevador.m4a" />
+        <file name="20 botão elevador.ogg" />
+        <file name="21 elevador.m4a" />
+        <file name="21 elevador.ogg" />
+        <file name="22 carro partindo.m4a" />
+        <file name="22 carro partindo.ogg" />
+        <file name="3 Start jogo.m4a" />
+        <file name="3 Start jogo.ogg" />
+        <file name="4 andando na casa.m4a" />
+        <file name="4 andando na casa.ogg" />
+        <file name="5 subindo escada.m4a" />
+        <file name="5 subindo escada.ogg" />
+        <file name="6 descendo escada .m4a" />
+        <file name="6 descendo escada .ogg" />
+        <file name="7 pegando a chave.m4a" />
+        <file name="7 pegando a chave.ogg" />
+        <file name="8 andando fora da casa.m4a" />
+        <file name="8 andando fora da casa.ogg" />
+        <file name="9 coruja.m4a" />
+        <file name="9 coruja.ogg" />
+    </sounds-folder>
+    <music-folder>
+        <file name="Música 2.m4a" />
+        <file name="Música 2.ogg" />
+        <file name="Música 3 final.m4a" />
+        <file name="Música 3 final.ogg" />
+        <file name="Música início.m4a" />
+        <file name="Música início.ogg" />
+    </music-folder>
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
