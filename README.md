@@ -56,15 +56,15 @@ Music Composer and Sound Designer:
 
 ![Game title screen](/press/TitleScreen.png)
 
-![Game monster tractor](/other/Monster_Tractor.png)
+![Game monster tractor](/press/Monster_Tractor.png)
 
-![Game Mouth Beast](/other/MouthBeast.png)
+![Game Mouth Beast](/press/MouthBeast.png)
 
-![Game Monster Bush](/other/Monster_Bush.png)
+![Game Monster Bush](/press/Monster_Bush.png)
 
-![Game cave](/other/Cave.png)
+![Game cave](/press/Cave.png)
 
-![Game Elevator](/other/Elevator.png) 
+![Game Elevator](/press/Elevator.png) 
 
 Thanks to reviewers, testers players, friends and guests who helped in any way the project become reality.
 
