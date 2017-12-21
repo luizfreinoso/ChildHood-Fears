@@ -4,7 +4,7 @@ A indie terror platform game created in  Global Game Jam 2015
 ## High Concept:
 (EN) A family lives alone in a cabin. The father, the daugther and the son. The father tries to teach his sons how to live in this dangerous world. But one day, he is one that will need their help. Having their father fall ill to a disease, the brothers will have to travel through the wilds to a place where they can get help. Or should they stay and wait for someone to come? Should they carry their father or leave him behind? How can they decide what should they do? The game is a plataform/puzzle, where you control Amy, a 10 years old girl and her six years old brother, Moshe. They are left alone with their father, who lies unconscious because of a disease. Being so young, both of them don't know exactly what to do in this situation, since they relied on their father to do everything. Their father always warned them that other people are dangerous, and should be avoided at all costs. Their society succumbed long ago, so long that even the father never lived or knew any big city. He would always tell scary story to his sons, saying how dangerous is the world outside their home. Now, Amy and Moshe have to face the real dangers of the world and the nightmarish visions of their imaginations to save their father.
 
-**Global Game Jam, game link:** https://globalgamejam.org/2016/games/tambor
+**Global Game Jam, game link:** https://globalgamejam.org/2015/games/childhood-fears
 
 **Jam Site:** [Global Game Jam - UCL](https://globalgamejam.org/2015/jam-sites/global-game-jam-ucl)
 
